@@ -2261,7 +2261,7 @@ a:hover {
 }
 .modal__input.message {
   flex: 1;
-  height: 100%;
+  min-height: 100%;
   border-radius: var(--radius-l);
 }
 .modal__checkbox {
@@ -2323,6 +2323,10 @@ a:hover {
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 15px 40px;
+}
+.modal__btn.w100 {
+  width: 100%;
+  max-width: 100%;
 }
 .modal__slider {
   width: 100%;
