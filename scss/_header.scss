@@ -13,12 +13,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 15px calc((100% - var(--desktop-width)) / 2);
+    padding: 14px calc((100% - var(--desktop-width)) / 2);
     color: var(--white-text-color);
 
     a {
       color: var(--white-text-color);
       text-decoration: none;
+      font-size: 14px;
     }
   }
 
@@ -296,7 +297,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .header {
     &__main {
       flex-wrap: wrap;

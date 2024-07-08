@@ -1,3 +1,5 @@
+@import url(../assets/fonts/lato.css);
+
 body {
   --dark-color: #18154B;
   --blue-color: #11527D;
@@ -29,7 +31,7 @@ body {
   --radius-circle: 50%;
 
   --font-family-main: "Nunito Sans", serif;
-  --font-family-sub: 'Lato', sans-serif;
+  --font-family-sub: 'lato', sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -162,11 +164,11 @@ a:hover {
 
 @media screen and (max-width: 1600px) {
   body {
-    --desktop-width: 1200px;
+    --desktop-width: 1180px;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   body {
     --desktop-width: 960px;
   }

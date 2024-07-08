@@ -54,7 +54,7 @@
       font-weight: 500;
       color: var(--blue-text-color);
       font-size: 24px;
-      line-height: 26ox;
+      line-height: 26px;
     }
 
     a {
@@ -81,8 +81,8 @@
 
 @media screen and (max-width: 1600px) {
   .categories {
-    &__list-item {
-      width: calc((100% - 20px) / 2);
+    &__img {
+      width: 50%;
     }
   }
 }

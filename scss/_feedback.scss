@@ -40,7 +40,8 @@
 
   &__social {
     flex: 1;
-    aspect-ratio: 1 / 1;
+    width: 295px;
+    height: 290px;
     display: flex;
     align-items: center;
     border-radius: var(--radius-circle);
@@ -55,12 +56,12 @@
   &__social-mobile {
     display: none;
     width: 100%;
-    justify-content: end;
+    justify-content: start;
     border-radius: var(--radius-circle);
 
     img {
-      width: 80px;
-      height: 80px;
+      width: 250px;
+      height: 190px;
       border-radius: var(--radius-circle);
     }
   }
@@ -133,7 +134,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .feedback {
     padding: 50px;
 
@@ -216,6 +217,13 @@
       a {
         font-size: 12px;
         line-height: 15px;
+      }
+    }
+
+    &__social-mobile {
+      img {
+        width: 84px;
+        height: 84px;
       }
     }
   }

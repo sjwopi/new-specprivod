@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .popularCategories {
     &__item {
       padding: 20px 0;
@@ -91,6 +91,7 @@
 
     &__slider {
       overflow: hidden;
+
       .swiper-wrapper {
         padding-bottom: 20px;
       }

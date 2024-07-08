@@ -113,50 +113,50 @@
       <h1 class="title">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</h1>
 
       <div class="productPage__container">
-        <div class="productPage__main">
 
-          <div class="productPage__imgs">
-            <nav class="productPage__nav">
-              <img src="./assets/img/sub/product-image.png" alt="картинка товара"
-                class="productPage__nav-item active"></img>
-              <img src="./assets/img/sub/project-image.jpg" alt="картинка товара" class="productPage__nav-item"></img>
-              <img src="./assets/img/sub/product-image.png" alt="картинка товара" class="productPage__nav-item"></img>
-            </nav>
-
-            <div class="productPage__img-container">
-              <button class="productPage__favorite"></button>
-              <!-- <button class="productPage__favorite active"></button> -->
-              <img class="productPage__img-main" src="./assets/img/sub/product-image.png"
-                alt="главное изображение товара">
+        <div class="productPage__imgs">
+          <nav class="productPage__nav">
+            <div class="swiper-wrapper">
+              <img src="./assets/img/sub/product-image.png" alt="картинка товара" class="swiper-slide productPage__nav-item active"></img>
+              <img src="./assets/img/sub/project-image.jpg" alt="картинка товара" class="swiper-slide productPage__nav-item"></img>
+              <img src="./assets/img/sub/product-image.png" alt="картинка товара" class="swiper-slide productPage__nav-item"></img>
+              <img src="./assets/img/sub/project-image.jpg" alt="картинка товара" class="swiper-slide productPage__nav-item"></img>
+              <img src="./assets/img/sub/product-image.png" alt="картинка товара" class="swiper-slide productPage__nav-item"></img>
             </div>
+          </nav>
+
+          <div class="productPage__img-container">
+            <button class="productPage__favorite"></button>
+            <!-- <button class="productPage__favorite active"></button> -->
+            <img class="productPage__img-main" src="./assets/img/sub/product-image.png"
+              alt="главное изображение товара">
           </div>
-
-          <ul class="productPage__description">
-            <a href="" class="productPage__art">Артикул: SA-C20-08</a>
-            <li class="productPage__description-item">
-              <p class="productPage__subtitle">Диапазон рабочих температур</p>
-              <div class="productPage__underline"></div>
-              <p class="productPage__text">0~60°C</p>
-            </li>
-            <li class="productPage__description-item">
-              <p class="productPage__subtitle">Максимальное входное давление</p>
-              <div class="productPage__underline"></div>
-              <p class="productPage__text">10 Бар</p>
-            </li>
-            <li class="productPage__description-item">
-              <p class="productPage__subtitle">Рабочая среда</p>
-              <div class="productPage__underline"></div>
-              <p class="productPage__text">воздух</p>
-            </li>
-            <li class="productPage__description-item">
-              <p class="productPage__subtitle">Материалы</p>
-              <div class="productPage__underline"></div>
-              <p class="productPage__text">NBR, POM, Алюминий, нейлон, технополимер</p>
-            </li>
-            <a href="#description" class="productPage__link">Перейти к описанию</a>
-          </ul>
-
         </div>
+
+        <ul class="productPage__description">
+          <a href="" class="productPage__art">Артикул: SA-C20-08</a>
+          <li class="productPage__description-item">
+            <p class="productPage__subtitle">Диапазон рабочих температур</p>
+            <div class="productPage__underline"></div>
+            <p class="productPage__text">0~60°C</p>
+          </li>
+          <li class="productPage__description-item">
+            <p class="productPage__subtitle">Максимальное входное давление</p>
+            <div class="productPage__underline"></div>
+            <p class="productPage__text">10 Бар</p>
+          </li>
+          <li class="productPage__description-item">
+            <p class="productPage__subtitle">Рабочая среда</p>
+            <div class="productPage__underline"></div>
+            <p class="productPage__text">воздух</p>
+          </li>
+          <li class="productPage__description-item">
+            <p class="productPage__subtitle">Материалы</p>
+            <div class="productPage__underline"></div>
+            <p class="productPage__text">NBR, POM, Алюминий, нейлон, технополимер</p>
+          </li>
+          <a href="#description" class="productPage__link">Перейти к описанию</a>
+        </ul>
 
         <div class="productPage__sidebar">
           <div class="productPage__sidebar-main">
@@ -429,6 +429,17 @@
   </div>
 
   <script src="./index.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperBanner = new Swiper(".productPage__nav", {
+      direction: window.innerWidth > 1000 ? "vertical" : "horizontal",
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      grabCursor: true,
+    });
+  </script>
 </body>
 
 </html>
