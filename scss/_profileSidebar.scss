@@ -1,0 +1,69 @@
+.sidebar {
+  width: 375px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+
+  &__nav {
+    height: fit-content;
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    border-radius: var(--radius-l);
+    background-color: var(--white-color);
+    overflow: hidden;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+  }
+
+  &__link {
+    width: 100%;
+    background-color: var(--white-color);
+    font-size: 15px;
+    line-height: 17px;
+    padding: 16px 35px;
+    border-top: 2px solid var(--blue-color);
+
+    &:hover {
+      opacity: 1;
+      background: var(--bg-color);
+    }
+
+    &.active {
+      border-color: transparent;
+      background: var(--gradient-dark);
+      color: var(--white-text-color);
+
+      &:hover {
+        border-color: transparent;
+        background: var(--gradient-dark);
+        color: var(--white-text-color);
+      }
+    }
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  &__tp {
+    height: 410px;
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border-radius: var(--radius-l);
+    box-shadow: 0px 4px 20px 0px #0000001A;
+  }
+
+  &__tp-img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+  }
+}

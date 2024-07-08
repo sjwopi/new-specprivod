@@ -1,0 +1,57 @@
+.delivery {
+  width: var(--desktop-width);
+  margin: 0 auto 100px auto;
+
+  ul {
+    padding-left: 22px;
+  }
+
+  li,
+  p,
+  i {
+    font-size: 16px;
+    line-height: 22px;
+
+    b {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  b {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &__green {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .delivery {
+    margin: 0 auto 60px auto;
+
+    ul {
+      padding-left: 15px;
+    }
+
+    li,
+    p,
+    i {
+      font-size: 12px;
+      line-height: 16px;
+
+      b {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    b {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

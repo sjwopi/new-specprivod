@@ -1,0 +1,221 @@
+body {
+  --dark-color: #18154B;
+  --blue-color: #11527D;
+  --cian-color: #34A8BB;
+  --black-color: #000;
+  --bg-color: #F0F5FB;
+  --white-color: #fff;
+
+  --black-text-color: #000;
+  --dark-text-color: #18154B;
+  --blue-text-color: #11527D;
+  --gray-text-color: #303239;
+  --caption-text-color: #b0b0b0;
+  --white-text-color: #fff;
+
+  --gradient: linear-gradient(75deg, var(--cian-color) -50%, var(--blue-color) 75%);
+  --gradient-dark: linear-gradient(75deg, var(--cian-color) -50%, var(--dark-color) 75%);
+
+  --desktop-width: 1560px;
+
+  --header-index: 2;
+  --dropdown-index: 3;
+  --overlay-index: 4;
+  --modal-index: 5;
+
+  --radius-s: 10px;
+  --radius-l: 20px;
+  --radius-full: 100px;
+  --radius-circle: 50%;
+
+  --font-family-main: "Nunito Sans", serif;
+  --font-family-sub: 'Lato', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+
+  &::-webkit-scrollbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--blue-color);
+    border-radius: var(--radius-full);
+    border: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-size: 16px;
+  line-height: 17px;
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black-text-color);
+}
+
+button,
+fieldset {
+  border: none;
+  background: none;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 16px 32px;
+  font-weight: 700;
+  background-color: var(--blue-color);
+  color: var(--white-text-color);
+  border-radius: var(--radius-full);
+
+  &.white {
+    background-color: var(--white-color);
+    color: var(--dark-text-color);
+  }
+
+  &.cian {
+    font-weight: 400;
+    background-color: var(--cian-color);
+    color: var(--white-text-color);
+  }
+
+  &.dark {
+    background-color: var(--dark-color);
+    color: var(--white-text-color);
+  }
+
+  &.outline {
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid var(--white-text-color);
+    color: var(--white-text-color);
+  }
+
+  &.gradient {
+    background: var(--gradient)
+  }
+}
+
+.title {
+  display: block;
+  color: var(--dark-text-color);
+  margin-bottom: 40px;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.stub {
+  flex: 1;
+  width: var(--desktop-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(75deg, var(--cian-color) -10%, var(--dark-color) 75%);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    --desktop-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    --desktop-width: 960px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    --desktop-width: calc(100% - 32px);
+  }
+
+  .btn {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    --radius-s: 5px;
+    --radius-l: 10px;
+  }
+}
+
+
+@import '_header';
+@import '_banner';
+@import '_categories';
+@import '_popularCategories';
+@import '_advantages';
+@import '_catalog';
+@import '_projects';
+@import '_conditions';
+@import '_feedback';
+@import '_about';
+@import '_footer';
+@import '_modals';
+@import '_breadcrumbs';
+@import '_policy';
+@import '_profile';
+@import '_profileSidebar';
+@import '_profileCart';
+@import '_profileFavorites';
+@import '_profileOrders';
+@import '_profileDelivery';
+@import '_profileOrganization';
+@import '_delivery';
