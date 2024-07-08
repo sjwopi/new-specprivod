@@ -485,7 +485,7 @@
     }
 
     &__item {
-      width: calc(50% - 3px);
+      width: calc((100% - 12px) / 3);
       display: none;
 
       &:nth-child(1),
@@ -532,13 +532,19 @@
 }
 
 @media screen and (max-width: 720px) {
-  .catalogList.products {
-    .catalogList__list {
-      gap: 6px;
-    }
+  .catalogList {
 
-    .catalogList__item {
+    &__item {
       width: calc(50% - 3px);
+    }
+    &.products {
+      .catalogList__list {
+        gap: 6px;
+      }
+
+      .catalogList__item {
+        width: calc(50% - 3px);
+      }
     }
   }
 

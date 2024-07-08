@@ -2,7 +2,7 @@
   width: var(--desktop-width);
   margin: 0 auto 100px auto;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 30px;
 
@@ -54,13 +54,18 @@
   .conditions {
     column-gap: 10px;
 
+    &__text {
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .conditions {
     &__item {
       width: calc(50% - 5px);
       gap: 15px;
-    }
-
-    &__text {
-      font-size: 13px;
     }
   }
 }

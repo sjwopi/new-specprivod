@@ -82,7 +82,7 @@
   &__header-title {
     font-size: 22px;
     line-height: 30px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--white-text-color);
     text-transform: uppercase;
   }
@@ -93,6 +93,12 @@
     font-size: 15px;
     color: var(--white-text-color);
     margin-bottom: 40px;
+  }
+
+  &__footer {
+    .btn {
+      min-width: fit-content;
+    }
   }
 }
 
@@ -110,8 +116,8 @@
     }
 
     &__bg-img {
-      height: 70%;
-      max-width: 35%;
+      height: 90%;
+      max-width: 45%;
     }
   }
 }
@@ -130,7 +136,7 @@
     }
 
     &__bg-img {
-      height: 180px;
+      height: 100%;
       max-width: 70%;
       bottom: 0;
       top: auto;
@@ -146,6 +152,7 @@
       flex-wrap: wrap;
       column-gap: 40px;
       align-items: center;
+      background-image: url(../assets/img/banner-small-mobile.jpg);
     }
 
     &__header {
@@ -153,11 +160,34 @@
     }
 
     &__caption {
-      margin-bottom: 12px;
+      margin-bottom: 0;
     }
 
     &__footer {
-      width: 50%;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .btn {
+        height: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    &__bg-img {
+      height: 100%;
+      max-width: 38%;
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: start;
     }
   }
 }
@@ -173,27 +203,35 @@
       line-height: 24px;
     }
 
-    &__main {
-      padding: 40px 18px;
+    &__bg-img {
+      height: 100%;
+      max-width: 50%;
     }
 
-    &__btn {
-      margin-bottom: 140px;
+    &__main {
+      padding: 40px 18px;
+      justify-content: center;
     }
 
     &__sidebar {
-      flex-direction: column;
       padding: 30px 18px;
-      gap: 5px;
+      gap: 40px;
     }
 
-    &__header {
-      width: 100%;
-      margin-bottom: 10px;
+    &__header-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__header-icon {
+      width: 46px;
+      height: 46px;
     }
 
     &__caption {
-      font-size: 10px;
+      font-size: 12px;
+      display: block;
+      max-width: 360px;
 
       br {
         display: none;
@@ -202,6 +240,34 @@
 
     &__footer {
       width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .banner {
+    &__btn {
+      margin-bottom: 140px;
+    }
+
+    &__bg-img {
+      height: 180px;
+      max-width: 100%;
+    }
+
+    &__caption {
+      font-size: 10px;
+    }
+
+    &__sidebar {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__header {
+      width: 100%;
+      margin-bottom: 10px;
     }
   }
 }

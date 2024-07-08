@@ -31,11 +31,12 @@
 
     &__img {
       width: 80%;
+      margin: 0 auto;
     }
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 720px) {
   .about {
     margin-bottom: 60px;
 
@@ -43,7 +44,11 @@
       font-size: 12px;
       line-height: 15px;
     }
+  }
+}
 
+@media screen and (max-width: 520px) {
+  .about {
     &__img {
       width: 100%;
     }
