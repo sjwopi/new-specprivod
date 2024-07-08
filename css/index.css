@@ -817,9 +817,9 @@ a:hover {
   background: url(../assets/icons/arrow-for-link.svg) center/contain no-repeat;
 }
 
-@media screen and (max-width: 1600px) {
-  .categories__img {
-    width: 50%;
+@media screen and (max-width: 1200px) {
+  .categories__list-item {
+    width: calc(50% - 10px);
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1654,6 +1654,12 @@ a:hover {
   border-bottom: 2px solid var(--dark-text-color);
 }
 
+@media screen and (max-width: 1400px) {
+  .projects {
+    width: var(--desktop-width);
+    margin: 0 auto 100px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .projectItem {
     gap: 10px;

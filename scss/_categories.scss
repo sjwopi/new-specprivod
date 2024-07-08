@@ -78,12 +78,9 @@
   }
 }
 
-
-@media screen and (max-width: 1600px) {
-  .categories {
-    &__img {
-      width: 50%;
-    }
+@media screen and (max-width: 1200px) {
+  .categories__list-item {
+    width: calc(50% - 10px);
   }
 }
 
