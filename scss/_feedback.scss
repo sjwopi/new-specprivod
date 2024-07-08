@@ -6,7 +6,7 @@
   align-items: center;
   gap: 20px;
   justify-content: space-between;
-  background: url(/assets/img/feedback.jpg) center/cover no-repeat;
+  background: url(../assets/img/feedback.jpg) center/cover no-repeat;
   padding: 80px 140px;
   margin: 0 auto 90px auto;
 
@@ -157,7 +157,7 @@
 @media screen and (max-width: 720px) {
   .feedback {
     padding: 40px 15px;
-    background-image: url(/assets/img/feedback-mobile.jpg);
+    background-image: url(../assets/img/feedback-mobile.jpg);
     margin: 0 auto 60px auto;
     gap: 0px;
 

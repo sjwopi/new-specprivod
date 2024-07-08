@@ -32,7 +32,7 @@
   &__phone {
     display: block;
     padding-left: 24px;
-    background: url(/assets/icons/phone.svg) 0 center/16px no-repeat;
+    background: url(../assets/icons/phone.svg) 0 center/16px no-repeat;
   }
 
   &__top-icons {
@@ -150,7 +150,7 @@
         right: 0;
         width: 10px;
         height: 5px;
-        background: url(/assets/icons/arrow-for-dropdown.svg) center/contain no-repeat;
+        background: url(../assets/icons/arrow-for-dropdown.svg) center/contain no-repeat;
         transition: all .2s ease-in-out;
       }
 
@@ -169,10 +169,7 @@
     z-index: var(--dropdown-index);
     top: 100%;
     left: 0;
-    padding: 35px 
-      calc((100% - var(--desktop-width)) / 2 + 200px)
-      35px 
-      calc((100% - var(--desktop-width)) / 2 + 335px);
+    padding: 35px calc((100% - var(--desktop-width)) / 2 + 200px) 35px calc((100% - var(--desktop-width)) / 2 + 335px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -237,7 +234,7 @@
     color: var(--blue-text-color);
     display: block;
     padding-left: 24px;
-    background: url(/assets/icons/phone-blue.svg) 0 center/16px no-repeat;
+    background: url(../assets/icons/phone-blue.svg) 0 center/16px no-repeat;
   }
 
   &__icons {
@@ -245,6 +242,7 @@
     flex-direction: row;
     gap: 10px;
   }
+
   &__icon {
     background-color: var(--bg-color);
     border-radius: var(--radius-circle);
@@ -283,6 +281,7 @@
     &__top-container {
       gap: 30px;
     }
+
     &__nav {
       gap: 20px;
     }
@@ -309,6 +308,7 @@
       flex-direction: column;
       gap: 15px;
     }
+
     &__top-container {
       gap: 60px;
     }

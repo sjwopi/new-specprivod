@@ -7,8 +7,9 @@
 
   &__slider {
     width: 100%;
-    
+
   }
+
   &__slider-pagination {
     position: absolute;
     z-index: 2;
@@ -27,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 40px;
-    background: url(/assets/img/footer.jpg) 10% 0/cover no-repeat;
+    background: url(../assets/img/footer.jpg) 10% 0/cover no-repeat;
     border-radius: var(--radius-s);
     position: relative;
   }
@@ -59,7 +60,7 @@
 
   &__sidebar {
     flex: 1;
-    background: url(/assets/img/banner-small.jpg) center/cover no-repeat;
+    background: url(../assets/img/banner-small.jpg) center/cover no-repeat;
     border-radius: var(--radius-s);
     padding: 105px 40px;
 
@@ -94,6 +95,7 @@
 
 @media screen and (max-width: 1600px) {
   .banner {
+
     /* &__slider {
       flex: 4;
     } */

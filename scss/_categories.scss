@@ -31,7 +31,7 @@
   position: relative;
   overflow: hidden;
   padding: 50px;
-  background: url(/assets/img/category-bg.png) 0 center/contain no-repeat;
+  background: url(../assets/img/category-bg.png) 0 center/contain no-repeat;
   background-color: var(--white-color);
   display: flex;
   flex-direction: row;
@@ -71,7 +71,7 @@
         height: 100%;
         width: 9px;
         right: -16px;
-        background: url(/assets/icons/arrow-for-link.svg) center/contain no-repeat;
+        background: url(../assets/icons/arrow-for-link.svg) center/contain no-repeat;
       }
     }
   }

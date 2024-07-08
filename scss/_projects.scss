@@ -43,7 +43,7 @@
       transform: translateY(-50%);
       width: 26px;
       height: 10px;
-      background: url(/assets/icons/arror-for-btn.svg) center/contain no-repeat;
+      background: url(../assets/icons/arror-for-btn.svg) center/contain no-repeat;
     }
 
     &_mobile {
@@ -79,7 +79,7 @@
       font-size: 0;
       width: 13px;
       height: 22px;
-      background: url(/assets/icons/arrow-for-slider.svg) center/contain no-repeat;
+      background: url(../assets/icons/arrow-for-slider.svg) center/contain no-repeat;
     }
 
     .swiper-button-prev::after {
