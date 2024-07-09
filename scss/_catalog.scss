@@ -1,5 +1,5 @@
 .catalogList {
-  width: calc(var(--desktop-width) + 36px);
+  width: var(--desktop-width);
   margin: 0 auto 100px auto;
 
   &.products {
@@ -79,7 +79,7 @@
   &__header {
     inline-size: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     position: relative;
     z-index: 2;
   }
@@ -88,6 +88,7 @@
     background-color: var(--bg-color);
     padding: 3px 11px;
     border-radius: 5px;
+    margin-right: auto;
 
     span {
       font-weight: 700;
@@ -346,45 +347,6 @@
     }
   }
 
-/*   &__counter-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 35px;
-  }
-
-  &__counter-btn {
-    width: 40px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size-xl);
-    line-height: var(--font-line-xl);
-    border: 2px solid #B2BFDF;
-    padding: 0 14px;
-    border-radius: 20px 0 0 20px;
-
-    &.right {
-      border-radius: 0 20px 20px 0;
-    }
-  }
-
-  &__input {
-    height: 100%;
-    width: 60px;
-    margin: 0;
-    border: none;
-    text-align: center;
-    border-top: 2px solid #B2BFDF;
-    border-bottom: 2px solid #B2BFDF;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      appearance: none;
-    }
-  }
- */
   &__tobasket {
     white-space: nowrap;
   }
@@ -413,6 +375,21 @@
   .catalogList.products {
     .catalogList__item {
       width: calc((100% - 80px) / 5);
+    }
+  }
+
+  .catalogItem {
+    padding: 12px 12px 20px 12px;
+
+    &__basket {
+      width: 30px;
+      height: 30px;
+      background-size: 18px;
+    }
+
+    &__btn {
+      font-size: 15px;
+      padding: 10px 20px;
     }
   }
 
@@ -532,30 +509,16 @@
 }
 
 @media screen and (max-width: 720px) {
-  .catalogList {
-
-    &__item {
-      width: calc(50% - 3px);
-    }
-    &.products {
-      .catalogList__list {
-        gap: 6px;
-      }
-
-      .catalogList__item {
-        width: calc(50% - 3px);
-      }
-    }
-  }
-
   .catalogItem {
     padding: 10px 10px 15px 10px;
+    gap: 7px;
 
     &__hit {
       padding: 2px 7px 0 7px;
 
       span {
-        font-size: 13px;
+        font-size: 10px;
+        line-height: 12px;
       }
     }
 
@@ -567,6 +530,10 @@
     &__name {
       font-size: 14px;
       line-height: 14px;
+    }
+
+    &__main {
+      gap: 2.2px;
     }
 
     &__caption {
@@ -615,6 +582,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .catalogList {
+    &__item {
+      width: calc(50% - 3px);
+    }
+
+    &.products {
+      .catalogList__list {
+        gap: 6px;
+      }
+
+      .catalogList__item {
+        width: calc(50% - 3px);
+      }
     }
   }
 }

@@ -122,61 +122,148 @@
         </div>
 
         <div class="profile__data" id="data">
-          <h2 class="profile__subtitle">Мои данные</h2>
+          <h2 class="profile__subtitle">Избранные товары</h2>
 
-          <form class="profile__form">
-            <fieldset class="profile__fieldset">
-              <label for="email" class="profile__label">Email</label>
-
-              <div class="profile__email">
-                <input type="email" class="form-control-plaintext profile__input" id="email"
-                  placeholder="specprivod@gmail.com">
-
-                <label class="profile__checkbox" for="profileCheckboxEmail">
-                  <input id="profileCheckboxEmail" type="checkbox">
-                  Получать рассылку
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset class="profile__fieldset">
-              <label for="username" class="profile__label">Имя</label>
-              <input type="text" class="form-control-plaintext profile__input" id="username" placeholder="Иван">
-            </fieldset>
-
-            <fieldset class="profile__fieldset">
-              <label for="lastname" class="profile__label">Фамилия</label>
-              <input type="text" class="form-control-plaintext profile__input" id="lastname" placeholder="Иванов">
-            </fieldset>
-
-            <fieldset class="profile__fieldset">
-              <label for="surname" class="profile__label">Отчество</label>
-              <input type="text" class="form-control-plaintext profile__input" id="surname" placeholder="Иванович">
-            </fieldset>
-
-            <fieldset class="profile__fieldset">
-              <label for="number" class="profile__label">Телефон</label>
-              <input type="text" class="form-control-plaintext profile__input" id="number"
-                placeholder="+7 999 999-99-99">
-            </fieldset>
-
-            <button class="btn cian profile__save">Сохранить</button>
-          </form>
-
-          <h2 class="profile__subtitle">Изменение пароля</h2>
-
-          <form class="profile__form">
-            <fieldset class="profile__fieldset">
-              <label for="newPassword" class="profile__label password">Новый пароль</label>
-              <input type="password" class="form-control profile__input" id="newPassword">
-            </fieldset>
-
-            <fieldset class="profile__fieldset">
-              <label for="newPassword" class="profile__label password">Подтвердите пароль</label>
-              <input type="password" class="form-control profile__input" id="newPassword">
-            </fieldset>
-            <button class="btn cian profile__save">Сохранить</button>
-          </form>
+          <ul class="profileFavorites">
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+            <li class="profileFavorites__item">
+              <article class="catalogItem">
+                <a href="./productItem.html" class=catalogItem__link></a>
+                <div class="catalogItem__header">
+                  <div class="catalogItem__hit"><span>хит</span></div>
+                  <button class="catalogItem__favorite active"></button>
+                </div>
+    
+                <img class="catalogItem__img" src="./assets/img/sub/product-image.png" alt="Antminer L7 8800 Mh/s">
+    
+                <div class="catalogItem__main">
+                  <h6 class="catalogItem__name">Antminer L7 8800 Mh/s</h6>
+                  <p class="catalogItem__caption">В наличии</p>
+    
+                  <div class="catalogItem__container">
+                    <p class="catalogItem__price">615 000 ₽</p>
+                    <button class="catalogItem__basket"></button>
+                  </div>
+                </div>
+    
+                <button class="btn catalogItem__btn">Купить в 1 клик</button>
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

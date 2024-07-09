@@ -1151,7 +1151,7 @@ a:hover {
   }
 }
 .catalogList {
-  width: calc(var(--desktop-width) + 36px);
+  width: var(--desktop-width);
   margin: 0 auto 100px auto;
 }
 .catalogList.products .catalogList__list {
@@ -1219,7 +1219,7 @@ a:hover {
 .catalogItem__header {
   inline-size: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   position: relative;
   z-index: 2;
 }
@@ -1227,6 +1227,7 @@ a:hover {
   background-color: var(--bg-color);
   padding: 3px 11px;
   border-radius: 5px;
+  margin-right: auto;
 }
 .catalogItem__hit span {
   font-weight: 700;
@@ -1307,45 +1308,6 @@ a:hover {
 .productPage {
   width: var(--desktop-width);
   margin: 0 auto 100px auto;
-  /*   &__counter-input {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      height: 35px;
-    }
-
-    &__counter-btn {
-      width: 40px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: var(--font-size-xl);
-      line-height: var(--font-line-xl);
-      border: 2px solid #B2BFDF;
-      padding: 0 14px;
-      border-radius: 20px 0 0 20px;
-
-      &.right {
-        border-radius: 0 20px 20px 0;
-      }
-    }
-
-    &__input {
-      height: 100%;
-      width: 60px;
-      margin: 0;
-      border: none;
-      text-align: center;
-      border-top: 2px solid #B2BFDF;
-      border-bottom: 2px solid #B2BFDF;
-
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        appearance: none;
-      }
-    }
-   */
 }
 .productPage__container {
   display: flex;
@@ -1514,6 +1476,18 @@ a:hover {
   .catalogList.products .catalogList__item {
     width: calc((100% - 80px) / 5);
   }
+  .catalogItem {
+    padding: 12px 12px 20px 12px;
+  }
+  .catalogItem__basket {
+    width: 30px;
+    height: 30px;
+    background-size: 18px;
+  }
+  .catalogItem__btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
   .productPage__nav-item {
     width: 78px;
     height: 78px;
@@ -1596,23 +1570,16 @@ a:hover {
   }
 }
 @media screen and (max-width: 720px) {
-  .catalogList__item {
-    width: calc(50% - 3px);
-  }
-  .catalogList.products .catalogList__list {
-    gap: 6px;
-  }
-  .catalogList.products .catalogList__item {
-    width: calc(50% - 3px);
-  }
   .catalogItem {
     padding: 10px 10px 15px 10px;
+    gap: 7px;
   }
   .catalogItem__hit {
     padding: 2px 7px 0 7px;
   }
   .catalogItem__hit span {
-    font-size: 13px;
+    font-size: 10px;
+    line-height: 12px;
   }
   .catalogItem__favorite {
     width: 13px;
@@ -1621,6 +1588,9 @@ a:hover {
   .catalogItem__name {
     font-size: 14px;
     line-height: 14px;
+  }
+  .catalogItem__main {
+    gap: 2.2px;
   }
   .catalogItem__caption {
     font-size: 10px;
@@ -1660,6 +1630,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .catalogList__item {
+    width: calc(50% - 3px);
+  }
+  .catalogList.products .catalogList__list {
+    gap: 6px;
+  }
+  .catalogList.products .catalogList__item {
+    width: calc(50% - 3px);
   }
 }
 .projects {
@@ -3290,6 +3271,48 @@ a:hover {
   }
   .profileCart__save {
     margin-left: auto;
+  }
+}
+.profileFavorites {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.profileFavorites__item {
+  width: calc((100% - 60px) / 4);
+}
+
+@media screen and (max-width: 1200px) {
+  .profileFavorites {
+    gap: 12px;
+  }
+  .profileFavorites__item {
+    width: calc((100% - 24px) / 3);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .profileFavorites {
+    gap: 6px;
+  }
+  .profileFavorites__item {
+    width: calc((100% - 12px) / 3);
+  }
+}
+@media screen and (max-width: 900px) {
+  .profileFavorites__item {
+    width: calc(50% - 3px);
+  }
+}
+@media screen and (max-width: 720px) {
+  .profileFavorites__item {
+    width: calc((100% - 12px) / 3);
+  }
+}
+@media screen and (max-width: 580px) {
+  .profileFavorites__item {
+    width: calc(50% - 3px);
   }
 }
 .delivery {
