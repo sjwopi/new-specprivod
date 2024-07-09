@@ -10,6 +10,7 @@ body {
 
   --black-text-color: #000;
   --dark-text-color: #18154B;
+  --cian-text-color: #34A8BB;
   --blue-text-color: #11527D;
   --gray-text-color: #303239;
   --caption-text-color: #b0b0b0;
@@ -26,6 +27,7 @@ body {
   --modal-index: 5;
 
   --radius-s: 10px;
+  --radius-m: 15px;
   --radius-l: 20px;
   --radius-full: 100px;
   --radius-circle: 50%;
@@ -195,6 +197,7 @@ a:hover {
 @media screen and (max-width: 720px) {
   body {
     --radius-s: 5px;
+    --radius-m: 10px;
     --radius-l: 10px;
   }
 }
@@ -222,3 +225,4 @@ a:hover {
 @import '_profileDelivery';
 @import '_profileOrganization';
 @import '_delivery';
+@import '_counter';

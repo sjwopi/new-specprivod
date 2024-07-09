@@ -7,8 +7,6 @@
 
   &__title {
     color: var(--dark-text-color);
-    font-size: 36px;
-    line-height: 44px;
     font-weight: 700;
   }
 
@@ -82,7 +80,7 @@
     font-size: 15px;
     line-height: 17px;
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 10px;
     margin-bottom: 15px;
 
@@ -99,5 +97,78 @@
   &__save {
     margin: 20px 0 0 auto;
     padding: 14px 100px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .profile {
+    &__fieldset {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__label {
+      padding: 0;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+
+    &__form {
+      gap: 10px;
+    }
+
+    &__input {
+      padding: 12px 20px;
+      border: 1.2px solid var(--blue-color);
+    }
+
+    &__checkbox {
+      margin-bottom: 10px;
+      align-items: center;
+
+      input[type="checkbox"] {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    &__save {
+      padding: 10px 40px;
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .profile {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__label {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__input {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 12px 20px;
+    }
+
+    &__checkbox {
+      font-size: 12px;
+      line-height: 15px;
+      align-items: end;
+    }
   }
 }

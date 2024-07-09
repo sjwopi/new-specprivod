@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-  <title>Учетные данные</title>
+  <title>Мои организации</title>
 </head>
 
 <body>
@@ -105,12 +105,12 @@
       <div class="profile__container">
         <div class="sidebar profile__sidebar">
           <nav class="sidebar__nav">
-            <a class="sidebar__link active" href="./profile-lk.html#data">Учетные данные</a>
+            <a class="sidebar__link" href="./profile-lk.html#data">Учетные данные</a>
             <a class="sidebar__link" href="./profile-cart.html#data">Моя корзина</a>
             <a class="sidebar__link" href="./profile-favorites.html#data">Избранные товары</a>
             <a class="sidebar__link" href="./profile-orders.html#data">Мои заказы</a>
             <a class="sidebar__link" href="./profile-delivery.html#data">Адреса доставки</a>
-            <a class="sidebar__link" href="./profile-organization.html#data">Мои организации</a>
+            <a class="sidebar__link active" href="./profile-organization.html#data">Мои организации</a>
           </nav>
 
           <div class="sidebar__tp">
@@ -166,23 +166,14 @@
           <h2 class="profile__subtitle">Изменение пароля</h2>
 
           <form class="profile__form">
-
-            <fieldset class="profile__fieldset modal__password">
+            <fieldset class="profile__fieldset">
               <label for="newPassword" class="profile__label password">Новый пароль</label>
-
-              <div class="modal__password">
-                <input type="password" class="form-control profile__input" id="newPassword">
-                <button type="button" class="modal__eye"></button>
-              </div>
+              <input type="password" class="form-control profile__input" id="newPassword">
             </fieldset>
 
             <fieldset class="profile__fieldset">
-              <label for="confirmNewPassword" class="profile__label password">Подтвердите пароль</label>
-
-              <div class="modal__password">
-                <input type="password" class="form-control profile__input" id="confirmNewPassword">
-                <button type="button" class="modal__eye"></button>
-              </div>
+              <label for="newPassword" class="profile__label password">Подтвердите пароль</label>
+              <input type="password" class="form-control profile__input" id="newPassword">
             </fieldset>
             <button class="btn cian profile__save">Сохранить</button>
           </form>

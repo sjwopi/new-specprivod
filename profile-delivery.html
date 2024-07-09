@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Адреса доставки</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <section class="header__top">
+      <div class="header__top-container">
+        <p>Нижний Новгород, пр. Гагарина, 178</p>
+        <a class="header__phone" href="tel:+7 (920) 252-50-32">+7 (920) 252-50-32</a>
+      </div>
+      <div class="header__top-container">
+        <a href="#" class="openLogin">Личный кабинет</a>
+        <a href="./about.html">О Компании</a>
+        <a href="./for-partners.html">Для партнеров</a>
+
+        <div class="header__top-icons">
+          <a href="#"><img class="header__top-icon" src="./assets/icons/telegram.svg" alt="телеграмм"></a>
+          <a href="#"><img class="header__top-icon" src="./assets/icons/whatsapp.svg" alt="ватсап"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="header__main">
+      <div class="header__container">
+        <a href="./index.html"><img class="header__logo" src="./assets/icons/logo.png" alt="логотип"></a>
+
+        <div class="header__hambbtn" id="header__hambbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <button class="header__link dropdownbtn" id="btn-dropdown-catalog">Каталог товаров</button>
+        <div class="header__dropdown" id="menu-dropdown-catalog">
+          <a href="./categories.html" class="header__dropdown-link">Блоки подготовки воздоуха</a>
+          <a href="./categories.html" class="header__dropdown-link">Пневматические отсечные клапана</a>
+          <a href="./categories.html" class="header__dropdown-link">Блоки подготовки воздоуха</a>
+          <a href="./categories.html" class="header__dropdown-link">Пневматические отсечные клапана</a>
+          <a href="./categories.html" class="header__dropdown-link">Блоки подготовки воздоуха</a>
+          <a href="./categories.html" class="header__dropdown-link">Блоки подготовки воздоуха</a>
+          <a href="./categories.html" class="header__dropdown-link">Пневматические отсечные клапана</a>
+          <a href="./categories.html" class="header__dropdown-link">Блоки подготовки воздоуха</a>
+        </div>
+
+        <a href="./projects.html" class="header__link">Наши проекты</a>
+        <a href="./services.html" class="header__link">Услуги</a>
+        <a href="./delivery.html" class="header__link">Доставка и оплата</a>
+        <a href="./contacts.html" class="header__link">Контакты</a>
+        <a href="#" class="header__link mobile openLogin">Личный кабинет</a>
+        <a href="./about.html" class="header__link mobile">О Компании</a>
+        <a href="./for-partners.html" class="header__link mobile">Для партнеров</a>
+      </nav>
+
+      <div class="header__btns">
+        <button class="btn gradient requestСall header__call">Заказать запрос</button>
+
+        <div class="header__icons">
+          <a href="#" class="header__icon"><img src="./assets/icons/search.svg" alt="поиск"></a>
+          <a href="./profile-favorites.html" class="header__icon">
+            <img src="./assets/icons/favorite.svg" alt="поиск">
+            <span>6</span>
+          </a>
+          <a href="./profile-cart.html" class="header__icon">
+            <img src="./assets/icons/basket.svg" alt="поиск">
+            <span>3</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__bottom-icons">
+          <a href="#"><img class="header__top-icon" src="./assets/icons/telegram-blue.svg" alt="телеграмм"></a>
+          <a href="#"><img class="header__top-icon" src="./assets/icons/whatsapp-blue.svg" alt="ватсап"></a>
+        </div>
+
+        <div class="header__bottom-container">
+          <p>Нижний Новгород, пр. Гагарина, 178</p>
+          <a class="header__bottom-phone" href="tel:+7 (920) 252-50-32">+7 (920) 252-50-32</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="profile">
+      <h2 class="title profile__title">Личный кабинет</h2>
+      <div class="profile__container">
+        <div class="sidebar profile__sidebar">
+          <nav class="sidebar__nav">
+            <a class="sidebar__link" href="./profile-lk.html#data">Учетные данные</a>
+            <a class="sidebar__link" href="./profile-cart.html#data">Моя корзина</a>
+            <a class="sidebar__link" href="./profile-favorites.html#data">Избранные товары</a>
+            <a class="sidebar__link" href="./profile-orders.html#data">Мои заказы</a>
+            <a class="sidebar__link active" href="./profile-delivery.html#data">Адреса доставки</a>
+            <a class="sidebar__link" href="./profile-organization.html#data">Мои организации</a>
+          </nav>
+
+          <div class="sidebar__tp">
+            <h3 class="sidebar__tp-title">Ваш менеджер</h3>
+            <img src="./assets/icons/TP.png" class="sidebar__tp-img" alt="иконка тех. поддержки">
+            <p>Иванов Иван Иванович<br>График работы: 8:00&nbsp;—&nbsp;16:00</p>
+            <button class="btn requestСall">Заказать звонок</button>
+          </div>
+        </div>
+
+        <div class="profile__data" id="data">
+          <h2 class="profile__subtitle">Мои данные</h2>
+
+          <form class="profile__form">
+            <fieldset class="profile__fieldset">
+              <label for="email" class="profile__label">Email</label>
+
+              <div class="profile__email">
+                <input type="email" class="form-control-plaintext profile__input" id="email"
+                  placeholder="specprivod@gmail.com">
+
+                <label class="profile__checkbox" for="profileCheckboxEmail">
+                  <input id="profileCheckboxEmail" type="checkbox">
+                  Получать рассылку
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="profile__fieldset">
+              <label for="username" class="profile__label">Имя</label>
+              <input type="text" class="form-control-plaintext profile__input" id="username" placeholder="Иван">
+            </fieldset>
+
+            <fieldset class="profile__fieldset">
+              <label for="lastname" class="profile__label">Фамилия</label>
+              <input type="text" class="form-control-plaintext profile__input" id="lastname" placeholder="Иванов">
+            </fieldset>
+
+            <fieldset class="profile__fieldset">
+              <label for="surname" class="profile__label">Отчество</label>
+              <input type="text" class="form-control-plaintext profile__input" id="surname" placeholder="Иванович">
+            </fieldset>
+
+            <fieldset class="profile__fieldset">
+              <label for="number" class="profile__label">Телефон</label>
+              <input type="text" class="form-control-plaintext profile__input" id="number"
+                placeholder="+7 999 999-99-99">
+            </fieldset>
+
+            <button class="btn cian profile__save">Сохранить</button>
+          </form>
+
+          <h2 class="profile__subtitle">Изменение пароля</h2>
+
+          <form class="profile__form">
+            <fieldset class="profile__fieldset">
+              <label for="newPassword" class="profile__label password">Новый пароль</label>
+              <input type="password" class="form-control profile__input" id="newPassword">
+            </fieldset>
+
+            <fieldset class="profile__fieldset">
+              <label for="newPassword" class="profile__label password">Подтвердите пароль</label>
+              <input type="password" class="form-control profile__input" id="newPassword">
+            </fieldset>
+            <button class="btn cian profile__save">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__main">
+      <div class="footer__container">
+        <h3 class="footer__subtitle">Компания</h3>
+        <a href="./for-partners.html">Для партнеров</a>
+        <a href="./about.html">О компании</a>
+      </div>
+
+      <div class="footer__container">
+        <h3 class="footer__subtitle">Информация</h3>
+        <a href="./about-products.html">О продукции</a>
+        <a href="./guarantees.html">Гарантии</a>
+        <a href="./delivery.html">Доставка и оплата</a>
+        <a href="./where-to-buy.html">Где купить</a>
+      </div>
+
+      <div class="footer__container">
+        <h3 class="footer__subtitle">Каталог</h3>
+        <a href="./categories.html">Категория 1</a>
+        <a href="./categories.html">Категория 2</a>
+        <a href="./categories.html">Категория 3</a>
+      </div>
+
+      <div class="footer__container footer__container_contacts">
+        <div class="footer__contacts">
+          <h3 class="footer__subtitle">Контакты</h3>
+          <a href="#" class="footer__subscribe">Подписаться</a>
+        </div>
+        <div class="footer__phones">
+          <a href="tel:+7 (977) 422-66-54">+7 (977) 422-66-54</a>
+          <a href="tel:+7 (920) 252-50-32">+7 (920) 252-50-32</a>
+        </div>
+        <div class="footer__place">
+          <p>Нижний Новгород,<br>пр. Гагарина, 178</p>
+        </div>
+        <div class="footer__icons">
+          <a href="#"><img src="./assets/icons/facebook.svg" alt="фейсбук"></a>
+          <a href="#"><img src="./assets/icons/vk.svg" alt="вконтакте"></a>
+          <a href="#"><img src="./assets/icons/telegram-blue.svg" alt="телеграмм"></a>
+          <a href="#"><img src="./assets/icons/youtube.svg" alt="ютуб"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer__captions">
+      <div class="footer__caption">
+        <p><span>© 2024</span> Все права защищены</p>
+      </div>
+
+      <div class="footer__caption null"></div>
+
+      <div class="footer__caption">
+        <p><u>Нашли ошибку в тексте? Выделите<br>ее и нажмите CTRL + ENTER</u></p>
+      </div>
+
+      <div class="footer__caption">
+        <a href="#">Договор оферты</a>
+        <a href="./policy.html">Политика обработки конфиденциальности</a>
+      </div>
+    </section>
+  </footer>
+
+  <div class="modal call" id="modalRequestСall">
+    <div class="modal__overlay" id="overlayRequestСall"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnRequestСall">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+      <h3 class="modal__title">Получить консультацию</h3>
+      <p class="modal__text">Наши менеджеры перезвонят вам в течение 2 минут</p>
+
+      <div class="modal__row">
+        <fieldset class="modal__fieldset">
+          <input class="modal__input" placeholder="Ваше имя" type="text">
+          <input class="modal__input" placeholder="Телефон" type="phone">
+          <input class="modal__input" placeholder="E-mail" type="email">
+        </fieldset>
+
+        <textarea class="modal__input message" placeholder="Сообщение" type="text"></textarea>
+      </div>
+
+      <div class="modal__footer">
+        <p class="modal__subtext">Заполняя настоящую форму вы даете свое согласие на обработку своих персональных
+          данных. </p>
+        <button type="submit" class="btn dark modal__btn">Оставить заявку</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal" id="modalLogin">
+    <div class="modal__overlay" id="overlayLogin"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnLogin">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Войти</h3>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <a href="#" class="modal__help">Я не помню пароль</a>
+        <button class="btn dark modal__btn w100 btnToProfile">Войти</button>
+        <button class="btn outline modal__btn w100 btnToRegisterPhys">Регистрация</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="modal reg" id="modalRegisterPhys">
+    <div class="modal__overlay" id="overlayRegisterPhys"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnRegisterPhys">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Регистрация</h3>
+
+      <div class="modal__slider">
+        <button class="active">Физическое лицо</button>
+        <button class="btnToRegisterUr">Юридическое лицо</button>
+      </div>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Подтвердите пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <input class="modal__input" placeholder="Ваше имя" type="text">
+        <input class="modal__input" placeholder="Отчество (при наличии)" type="text">
+        <input class="modal__input" placeholder="Телефон" type="phone">
+        <input class="modal__input" placeholder="Адрес">
+
+        <label for="consertToProcessingPhys" class="modal__checkbox">
+          <input id="consertToProcessingPhys" type="checkbox">
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+
+        <button class="btn dark modal__btn w100 btnToProfile">Регистрация</button>
+        <button class="btn outline modal__btn w100 openLogin">Во йти</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="modal reg" id="modalRegisterUr">
+    <div class="modal__overlay" id="overlayRegisterUr"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnRegisterUr">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Регистрация</h3>
+
+      <div class="modal__slider">
+        <button class="btnToRegisterPhys">Физическое лицо</button>
+        <button class="active">Юридическое лицо</button>
+      </div>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Подтвердите пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <input class="modal__input" placeholder="Ваше имя" type="text">
+        <input class="modal__input" placeholder="Отчество (при наличии)" type="text">
+        <input class="modal__input" placeholder="Телефон" type="phone">
+        <input class="modal__input" placeholder="Адрес">
+        <input class="modal__input" placeholder="ИНН" type="text">
+        <input class="modal__input" placeholder="КПП" type="text">
+        <input class="modal__input" placeholder="Название юридического лица" type="text">
+        <input class="modal__input" placeholder="Юридический адрес" type="text">
+        <input class="modal__input" placeholder="Банк" type="text">
+        <input class="modal__input" placeholder="БИК" type="text">
+        <input class="modal__input" placeholder="Корреспондентский счёт" type="text">
+        <input class="modal__input" placeholder="Рассчетный счет" type="text">
+
+        <label for="consertToProcessingUr" class="modal__checkbox">
+          <input id="consertToProcessingUr" type="checkbox">
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+
+        <button class="btn dark modal__btn w100 btnToProfile">Регистрация</button>
+        <button class="btn outline modal__btn w100 openLogin">Во йти</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

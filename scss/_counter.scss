@@ -1,0 +1,45 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35px;
+
+  &__btn {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height:20px;
+    color: var(--vlue-text-color);
+    border: 2px solid var(--blue-color);
+    padding: 0 14px;
+    border-radius: 20px 0 0 20px;
+
+    &.right {
+      border-radius: 0 20px 20px 0;
+    }
+  }
+
+  &__input {
+    height: 100%;
+    width: 60px;
+    margin: 0;
+    border: none;
+    text-align: center;
+    border-top: 2px solid var(--blue-color);
+    border-bottom: 2px solid var(--blue-color);
+    background: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+}

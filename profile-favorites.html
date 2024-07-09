@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-  <title>Главная</title>
+  <title>Избранное</title>
 </head>
 
 <body>
@@ -101,7 +101,7 @@
 
   <main>
     <section class="profile">
-      <h2 class="profile__title">Личный кабинет</h2>
+      <h2 class="title profile__title">Личный кабинет</h2>
       <div class="profile__container">
         <div class="sidebar profile__sidebar">
           <nav class="sidebar__nav">
@@ -116,7 +116,7 @@
           <div class="sidebar__tp">
             <h3 class="sidebar__tp-title">Ваш менеджер</h3>
             <img src="./assets/icons/TP.png" class="sidebar__tp-img" alt="иконка тех. поддержки">
-            <p>Иванов Иван Иванович<br>График работы: 8:00 — 16:00</p>
+            <p>Иванов Иван Иванович<br>График работы: 8:00&nbsp;—&nbsp;16:00</p>
             <button class="btn requestСall">Заказать звонок</button>
           </div>
         </div>
@@ -160,7 +160,7 @@
                 placeholder="+7 999 999-99-99">
             </fieldset>
 
-            <button class="profile__save">Сохранить</button>
+            <button class="btn cian profile__save">Сохранить</button>
           </form>
 
           <h2 class="profile__subtitle">Изменение пароля</h2>
@@ -175,7 +175,7 @@
               <label for="newPassword" class="profile__label password">Подтвердите пароль</label>
               <input type="password" class="form-control profile__input" id="newPassword">
             </fieldset>
-            <button class="profile__save">Сохранить</button>
+            <button class="btn cian profile__save">Сохранить</button>
           </form>
         </div>
       </div>
@@ -244,23 +244,24 @@
     </section>
   </footer>
 
-  <div class="overlay" id="overlayRequestСall"></div>
+
   <div class="modal call" id="modalRequestСall">
+    <div class="modal__overlay" id="overlayRequestСall"></div>
     <form class="modal__form">
       <button type="button" class="modal__close" id="closeBtnRequestСall">
         <img src="./assets/icons/close.svg" alt="крестик">
       </button>
-      <h2 class="modal__title">Получить консультацию</h2>
+      <h3 class="modal__title">Получить консультацию</h3>
       <p class="modal__text">Наши менеджеры перезвонят вам в течение 2 минут</p>
 
       <div class="modal__row">
         <fieldset class="modal__fieldset">
-          <input class="modal__item" placeholder="Ваше имя" type="text">
-          <input class="modal__item" placeholder="Телефон" type="phone">
-          <input class="modal__item" placeholder="E-mail" type="email">
+          <input class="modal__input" placeholder="Ваше имя" type="text">
+          <input class="modal__input" placeholder="Телефон" type="phone">
+          <input class="modal__input" placeholder="E-mail" type="email">
         </fieldset>
 
-        <textarea class="modal__item message" placeholder="Сообщение" type="text"></textarea>
+        <textarea class="modal__input message" placeholder="Сообщение" type="text"></textarea>
       </div>
 
       <div class="modal__footer">
@@ -268,6 +269,122 @@
           данных. </p>
         <button type="submit" class="btn dark modal__btn">Оставить заявку</button>
       </div>
+    </form>
+  </div>
+
+  <div class="modal" id="modalLogin">
+    <div class="modal__overlay" id="overlayLogin"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnLogin">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Войти</h3>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <a href="#" class="modal__help">Я не помню пароль</a>
+        <button class="btn dark modal__btn w100 btnToProfile">Войти</button>
+        <button class="btn outline modal__btn w100 btnToRegisterPhys">Регистрация</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="modal reg" id="modalRegisterPhys">
+    <div class="modal__overlay" id="overlayRegisterPhys"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnRegisterPhys">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Регистрация</h3>
+
+      <div class="modal__slider">
+        <button class="active">Физическое лицо</button>
+        <button class="btnToRegisterUr">Юридическое лицо</button>
+      </div>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Подтвердите пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <input class="modal__input" placeholder="Ваше имя" type="text">
+        <input class="modal__input" placeholder="Отчество (при наличии)" type="text">
+        <input class="modal__input" placeholder="Телефон" type="phone">
+        <input class="modal__input" placeholder="Адрес">
+
+        <label for="consertToProcessingPhys" class="modal__checkbox">
+          <input id="consertToProcessingPhys" type="checkbox">
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+
+        <button class="btn dark modal__btn w100 btnToProfile">Регистрация</button>
+        <button class="btn outline modal__btn w100 openLogin">Во йти</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="modal reg" id="modalRegisterUr">
+    <div class="modal__overlay" id="overlayRegisterUr"></div>
+    <form class="modal__form">
+      <button type="button" class="modal__close" id="closeBtnRegisterUr">
+        <img src="./assets/icons/close.svg" alt="крестик">
+      </button>
+
+      <h3 class="modal__title center">Регистрация</h3>
+
+      <div class="modal__slider">
+        <button class="btnToRegisterPhys">Физическое лицо</button>
+        <button class="active">Юридическое лицо</button>
+      </div>
+
+      <fieldset class="modal__fieldset">
+        <input class="modal__input" placeholder="E-mail" type="email">
+
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+        <div class="modal__password">
+          <input class="modal__input" placeholder="Подтвердите пароль" type="password">
+          <button type="button" class="modal__eye"></button>
+        </div>
+
+        <input class="modal__input" placeholder="Ваше имя" type="text">
+        <input class="modal__input" placeholder="Отчество (при наличии)" type="text">
+        <input class="modal__input" placeholder="Телефон" type="phone">
+        <input class="modal__input" placeholder="Адрес">
+        <input class="modal__input" placeholder="ИНН" type="text">
+        <input class="modal__input" placeholder="КПП" type="text">
+        <input class="modal__input" placeholder="Название юридического лица" type="text">
+        <input class="modal__input" placeholder="Юридический адрес" type="text">
+        <input class="modal__input" placeholder="Банк" type="text">
+        <input class="modal__input" placeholder="БИК" type="text">
+        <input class="modal__input" placeholder="Корреспондентский счёт" type="text">
+        <input class="modal__input" placeholder="Рассчетный счет" type="text">
+
+        <label for="consertToProcessingUr" class="modal__checkbox">
+          <input id="consertToProcessingUr" type="checkbox">
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+
+        <button class="btn dark modal__btn w100 btnToProfile">Регистрация</button>
+        <button class="btn outline modal__btn w100 openLogin">Во йти</button>
+      </fieldset>
     </form>
   </div>
 
