@@ -1,0 +1,77 @@
+.deliveryList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.deliveryItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-radius: var(--radius-s);
+  background-color: var(--white-color);
+  padding: 25px 40px;
+  box-shadow: var(--box-shadow);
+
+  &__checkbox {
+    width: 28px;
+    height: 28px;
+    accent-color: var(--blue-color);
+  }
+
+  p {
+    flex: 1;
+  }
+
+  &__delete {
+    width: 28px;
+    height: 28px;
+    background: url(../assets/icons/cart-delete.svg) center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .deliveryItem {
+    gap: 20px;
+    padding: 20px;
+
+    &__checkbox {
+      width: 23px;
+      height: 23px;
+    }
+
+    &__delete {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .deliveryItem p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .deliveryItem {
+    gap: 20px;
+    padding: 15px 10px;
+
+    &__checkbox {
+      width: 17px;
+      height: 17px;
+    }
+
+    &__delete {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
