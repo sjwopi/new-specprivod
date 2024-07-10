@@ -122,61 +122,293 @@
         </div>
 
         <div class="profile__data" id="data">
-          <h2 class="profile__subtitle">Мои данные</h2>
+          <h2 class="profile__subtitle">Мои заказы</h2>
 
-          <form class="profile__form">
-            <fieldset class="profile__fieldset">
-              <label for="email" class="profile__label">Email</label>
-
-              <div class="profile__email">
-                <input type="email" class="form-control-plaintext profile__input" id="email"
-                  placeholder="specprivod@gmail.com">
-
-                <label class="profile__checkbox" for="profileCheckboxEmail">
-                  <input id="profileCheckboxEmail" type="checkbox">
-                  Получать рассылку
-                </label>
+          <ul class="profileOrders__orders">
+            <li class="order">
+              <div class="order__header">
+                <div class="order__row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="order__row two">
+                  <button class="order__status green">Получено</button>
+                  <p class="order__subtitle">Сумма заказа: 28 560 ₽  </p>
+                </div>
+                <button class="order__open-btn"></button>
               </div>
-            </fieldset>
 
-            <fieldset class="profile__fieldset">
-              <label for="username" class="profile__label">Имя</label>
-              <input type="text" class="form-control-plaintext profile__input" id="username" placeholder="Иван">
-            </fieldset>
+              <ul class="profileOrders__list order__list">
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+              </ul>
 
-            <fieldset class="profile__fieldset">
-              <label for="lastname" class="profile__label">Фамилия</label>
-              <input type="text" class="form-control-plaintext profile__input" id="lastname" placeholder="Иванов">
-            </fieldset>
+              <div class="order__footer">
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </button>
 
-            <fieldset class="profile__fieldset">
-              <label for="surname" class="profile__label">Отчество</label>
-              <input type="text" class="form-control-plaintext profile__input" id="surname" placeholder="Иванович">
-            </fieldset>
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </button>
+              </div>
+            </li>
+            <li class="order">
+              <div class="order__header">
+                <div class="order__row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="order__row two">
+                  <button class="order__status green">Отгружено</button>
+                  <p class="order__subtitle">Сумма заказа: 28 560 ₽  </p>
+                </div>
+                <button class="order__open-btn"></button>
+              </div>
 
-            <fieldset class="profile__fieldset">
-              <label for="number" class="profile__label">Телефон</label>
-              <input type="text" class="form-control-plaintext profile__input" id="number"
-                placeholder="+7 999 999-99-99">
-            </fieldset>
+              <ul class="profileOrders__list order__list">
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+              </ul>
 
-            <button class="btn cian profile__save">Сохранить</button>
-          </form>
+              <div class="order__footer">
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </button>
 
-          <h2 class="profile__subtitle">Изменение пароля</h2>
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </button>
+              </div>
+            </li>
+            <li class="order">
+              <div class="order__header">
+                <div class="order__row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="order__row two">
+                  <button class="order__status">Сборка</button>
+                  <p class="order__subtitle">Сумма заказа: 28 560 ₽  </p>
+                </div>
+                <button class="order__open-btn"></button>
+              </div>
 
-          <form class="profile__form">
-            <fieldset class="profile__fieldset">
-              <label for="newPassword" class="profile__label password">Новый пароль</label>
-              <input type="password" class="form-control profile__input" id="newPassword">
-            </fieldset>
+              <ul class="profileOrders__list order__list">
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+                <li class="cartItem">
+                  <div class="cartItem__product">
+    
+                    <div class="cartItem__left">
+                      <img class="cartItem__img" src="./assets/img/sub/product-image.png"
+                        alt="Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин">
+    
+                      <div class="cartItem__left-btns">
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                        <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                      </div>
+                    </div>
+    
+                    <div class="cartItem__description">
+                      <p class="cartItem__name">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+    
+                      <div class="cartItem__info">
+                        <div class="cartItem__btns">
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-favorite.svg"></button>
+                          <button class="cartItem__btn"><img src="./assets/icons/cart-delete.svg"></button>
+                        </div>
+    
+                        <p class="cartItem__art">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h3 class="cartItem__price">4 760 ₽</h3>
+    
+                  <div class="cartItem__counter">
+                    <div class="profileOrders__count">2 шт.</div>
+                  </div>
+                </li>
+              </ul>
 
-            <fieldset class="profile__fieldset">
-              <label for="newPassword" class="profile__label password">Подтвердите пароль</label>
-              <input type="password" class="form-control profile__input" id="newPassword">
-            </fieldset>
-            <button class="btn cian profile__save">Сохранить</button>
-          </form>
+              <div class="order__footer">
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </button>
+
+                <button class="order__btn">
+                  <img class="order__icon" src="./assets/icons/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </button>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
     </section>

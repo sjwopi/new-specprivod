@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 45px calc((100% - var(--desktop-width)) / 2);
+  width: var(--desktop-width);
+  margin: 0 auto 100px auto;
   gap: 15px;
 
   &__title {
@@ -103,6 +104,8 @@
 
 @media screen and (max-width: 1000px) {
   .profile {
+    margin: 0 auto 60px auto;
+    
     &__fieldset {
       flex-direction: column;
       gap: 10px;
@@ -154,6 +157,7 @@
       font-size: 20px;
       line-height: 24px;
     }
+
     &__label {
       font-size: 12px;
       line-height: 15px;

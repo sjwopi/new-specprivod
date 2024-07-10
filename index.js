@@ -83,4 +83,11 @@ window.onload = function () {
       location.href = "./profile-lk.html";
     })
   })
+
+  const orderOpenBtns = document.querySelectorAll('.order__open-btn');
+  orderOpenBtns.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.target.parentElement.parentElement.classList.toggle('open')
+    })
+  })
 }

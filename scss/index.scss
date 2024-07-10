@@ -19,6 +19,8 @@ body {
   --gradient: linear-gradient(75deg, var(--cian-color) -50%, var(--blue-color) 75%);
   --gradient-dark: linear-gradient(75deg, var(--cian-color) -50%, var(--dark-color) 75%);
 
+  --box-shadow: 0px 4px 20px 0px #0000001A;
+
   --desktop-width: 1560px;
 
   --header-index: 2;
@@ -199,6 +201,8 @@ a:hover {
     --radius-s: 5px;
     --radius-m: 10px;
     --radius-l: 10px;
+
+    --box-shadow: 0px 3px 12px 0px #0000001A;
   }
 }
 
@@ -209,6 +213,7 @@ a:hover {
 @import '_popularCategories';
 @import '_advantages';
 @import '_catalog';
+@import '_productPage';
 @import '_projects';
 @import '_conditions';
 @import '_feedback';
@@ -220,6 +225,7 @@ a:hover {
 @import '_profile';
 @import '_profileSidebar';
 @import '_profileCart';
+@import '_cartItem';
 @import '_profileFavorites';
 @import '_profileOrders';
 @import '_profileDelivery';

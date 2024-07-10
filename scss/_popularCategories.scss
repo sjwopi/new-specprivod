@@ -64,6 +64,7 @@
     &__item {
       padding: 20px;
     }
+
     &__title {
       font-size: 24px;
       line-height: 28px;
@@ -97,18 +98,19 @@
       overflow: hidden;
 
       .swiper-wrapper {
-        padding-bottom: 20px;
+        padding-bottom: 15px;
       }
     }
 
-    &__slider-pagination {
+    &__slider-scrollbar {
       top: auto !important;
-      height: 5px;
+      bottom: 0;
+      height: 5px !important;
       border-radius: 3px;
       background-color: #DEDEDE;
       overflow: hidden;
 
-      span {
+      .swiper-scrollbar-drag {
         background-color: var(--blue-color) !important;
         border-radius: 3px;
       }

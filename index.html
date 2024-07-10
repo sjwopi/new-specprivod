@@ -321,7 +321,7 @@
             </div>
           </article>
         </div>
-        <div class="popularCategories__slider-pagination"></div>
+        <div class="popularCategories__slider-scrollbar"></div>
       </div>
     </section>
 
@@ -940,9 +940,10 @@
     });
 
     var swiperPopular = new Swiper(".popularCategories__slider", {
-      pagination: {
-        el: ".popularCategories__slider-pagination",
-        type: "progressbar",
+      scrollbar: {
+        el: '.popularCategories__slider-scrollbar',
+        draggable: true,
+        dragSize:  window.innerWidth > 500 ? 300 : 100,
       },
       grabCursor: true,
       slidesPerView: window.innerWidth > 1000 ? 3 : 'auto',

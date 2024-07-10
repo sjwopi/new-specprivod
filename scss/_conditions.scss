@@ -20,7 +20,7 @@
     flex: 1;
     padding: 10px;
     background-color: var(--bg-color);
-    box-shadow: 0px 4px 20px 0px #00075E1A;
+    box-shadow: var(--box-shadow);
     border-radius: 50%;
     border: 12px solid var(--white-color);
     display: flex;
