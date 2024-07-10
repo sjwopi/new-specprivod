@@ -3769,6 +3769,14 @@ a:hover {
     width: fit-content;
     padding: 5px 30px;
   }
+  .order__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .order__icon {
+    width: 17px;
+    height: 17px;
+  }
 }
 .deliveryList {
   list-style: none;
@@ -3783,7 +3791,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-l);
   background-color: var(--white-color);
   padding: 25px 40px;
   box-shadow: var(--box-shadow);
@@ -3834,6 +3842,114 @@ a:hover {
   .deliveryItem__delete {
     width: 17px;
     height: 17px;
+  }
+}
+.profileOrganization__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileOrganization__btn {
+  padding: 15px 60px;
+}
+.profileOrganization__form {
+  display: none;
+  flex-direction: row;
+  gap: 7px;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: var(--radius-l);
+  box-shadow: var(--box-shadow);
+}
+.profileOrganization__form.open {
+  display: flex;
+}
+.profileOrganization__fieldset {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.profileOrganization__save {
+  padding: 15px 60px;
+  margin: auto 0 auto auto;
+  line-height: 20px;
+}
+.profileOrganization__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.organization {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: var(--radius-l);
+  box-shadow: var(--box-shadow);
+}
+.organization__main {
+  display: flex;
+  flex-direction: column;
+}
+.organization__main p {
+  font-size: 12px;
+}
+.organization__title {
+  margin-bottom: 20px;
+  color: var(--blue-color);
+}
+.organization__links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .profileOrganization__form {
+    flex-direction: column;
+  }
+  .profileOrganization__btn {
+    padding: 10px 20px;
+  }
+  .profileOrganization__save {
+    padding: 10px 20px;
+  }
+  .organization {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .organization__title {
+    margin-bottom: 10px;
+  }
+  .organization__links {
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 10px;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .profileOrganization__form {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .profileOrganization__header {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .organization__title {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 .delivery {

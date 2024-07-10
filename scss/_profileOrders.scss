@@ -165,4 +165,15 @@
       padding: 5px 30px;
     }
   }
+  .order {
+    &__link {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
 }

@@ -1,0 +1,129 @@
+.profileOrganization {
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 15px 60px;
+  }
+
+  &__form {
+    display: none;
+    flex-direction: row;
+    gap: 7px;
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: var(--radius-l);
+    box-shadow: var(--box-shadow);
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  &__fieldset {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__save {
+    padding: 15px 60px;
+    margin: auto 0 auto auto;
+    line-height: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.organization {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: var(--radius-l);
+  box-shadow: var(--box-shadow);
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--blue-color);
+  }
+
+  &__links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profileOrganization {
+    &__form {
+      flex-direction: column;
+    }
+    &__btn {
+      padding: 10px 20px;
+    }
+    &__save {
+      padding: 10px 20px;
+    }
+  }
+
+  .organization {
+    flex-direction: column;
+    gap: 10px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__links {
+      height: fit-content;
+      gap: 10px;
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .profileOrganization {
+    &__form {
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    &__header {
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+  .organization {
+    &__title {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

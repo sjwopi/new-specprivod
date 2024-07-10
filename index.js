@@ -90,4 +90,16 @@ window.onload = function () {
       e.target.parentElement.parentElement.classList.toggle('open')
     })
   })
+
+  const profileOrganizationAdd = document.getElementById('profileOrganization__btn');
+  const profileOrganizationForm = document.getElementById('profileOrganization__form');
+
+  profileOrganizationAdd.addEventListener('click', (e) => {
+    if (profileOrganizationForm.classList.contains('open')) {
+      e.target.textContent = 'Добавить организацию'
+    } else {
+      e.target.textContent = 'Отмена'
+    }
+    profileOrganizationForm.classList.toggle('open')
+  })
 }
