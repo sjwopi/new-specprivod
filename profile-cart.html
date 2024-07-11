@@ -171,7 +171,7 @@
                 </div>
               </div>
             </li>
-            
+
             <li class="profileCart__item cartItem">
               <div class="cartItem__product">
 
@@ -259,7 +259,6 @@
             <h4 class="profileCart__date">Дата доставки 31.12.23</h4>
             <div class="profileCart__total">
               <h4 class="profileCart__buy">Итого: <span>28 560 ₽</span></h4>
-              <button class="btn cian profileCart__save">Оформить заказ</button>
             </div>
           </div>
 
@@ -318,9 +317,84 @@
             <h4 class="profileCart__date">Дата доставки 31.12.23</h4>
             <div class="profileCart__total">
               <h4 class="profileCart__buy">Итого: <span>28 560 ₽</span></h4>
-              <button class="btn cian profileCart__save">Оформить заказ</button>
             </div>
           </div>
+
+          <div class="profileCart__sub" style="display: none;">
+            <h3 class="profile__subtitle">Данные получателя:</h3>
+            <form class="profile__form">
+              <fieldset class="profile__fieldset">
+                <label for="email" class="profile__label">Email</label>
+
+                <div class="profile__email">
+                  <input type="email" class="profile__input" id="email" placeholder="specprivod@gmail.com">
+
+                  <label class="profile__checkbox" for="profileCheckboxEmail">
+                    <input id="profileCheckboxEmail" type="checkbox">
+                    Получать рассылку
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="profile__fieldset">
+                <label for="username" class="profile__label">Имя</label>
+                <input type="text" class="profile__input" id="username" placeholder="Иван">
+              </fieldset>
+
+              <fieldset class="profile__fieldset">
+                <label for="lastname" class="profile__label">Фамилия</label>
+                <input type="text" class="profile__input" id="lastname" placeholder="Иванов">
+              </fieldset>
+
+              <fieldset class="profile__fieldset">
+                <label for="surname" class="profile__label">Отчество</label>
+                <input type="text" class="profile__input" id="surname" placeholder="Иванович">
+              </fieldset>
+
+              <fieldset class="profile__fieldset">
+                <label for="phone" class="profile__label">Телефон</label>
+                <input type="phone" class="profile__input" id="phone" placeholder="+7 999 999-99-99">
+              </fieldset>
+
+              <fieldset class="profile__fieldset">
+                <label for="comment" class="profile__label"></label>
+                <input type="text" class="profile__input" id="comment" placeholder="Комментарий">
+              </fieldset>
+            </form>
+          </div>
+
+          <h3 class="profile__subtitle">Варианты доставки:</h3>
+          <div class="profileCart__delivery">
+            <div class="profileCart__radio-item">
+              <input type="radio" id="DelLine" name="delivery" checked>
+              <label for="DelLine">Деловые линии</label>
+            </div>
+            <div class="profileCart__radio-item">
+              <input type="radio" id="SDEK" name="delivery">
+              <label for="SDEK">«СДЭК» Логистические решения</label>
+            </div>
+            <div class="profileCart__radio-item">
+              <input type="radio" id="Samovyvoz" name="delivery">
+              <label for="Samovyvoz">Самовывоз со склада в Нижнем Новгороде</label>
+            </div>
+          </div>
+
+          <h3 class="profile__subtitle">Адрес доставки:</h3>
+          <div></div>
+
+          <h3 class="profile__subtitle">Способы оплаты:</h3>
+          <div class="profileCart__delivery">
+            <div class="profileCart__radio-item">
+              <input type="radio" id="onlineByCard" name="payment">
+              <label for="onlineByCard">Онлайн оплата картой</label>
+            </div>
+            <div class="profileCart__radio-item">
+              <input type="radio" id="onlineByInvoice" name="payment">
+              <label for="onlineByInvoice">Оплата по счету</label>
+            </div>
+          </div>
+
+          <button class="btn cian profileCart__save">Оформить заказ</button>
         </div>
       </div>
     </section>

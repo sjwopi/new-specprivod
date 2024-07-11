@@ -5,6 +5,7 @@ window.onload = function () {
   hambBtnHeader.addEventListener('click', () => {
     hambBtnHeader.classList.toggle('open');
     header.classList.toggle('open')
+    document.body.classList.toggle('open')
   })
 
   // отркрытие и закрытие меню каталога
@@ -38,14 +39,17 @@ window.onload = function () {
       item.addEventListener('click', () => {
         allModals.forEach(item => item.classList.remove('open'))
         modal.classList.add('open')
+        document.body.classList.add('open')
       })
     })
 
     modalOvelay.addEventListener('click', () => {
       modal.classList.remove('open')
+      document.body.classList.remove('open')
     })
     modalCloseBtn.addEventListener('click', () => {
       modal.classList.remove('open')
+      document.body.classList.remove('open')
     })
   }
 
@@ -94,12 +98,14 @@ window.onload = function () {
   const profileOrganizationAdd = document.getElementById('profileOrganization__btn');
   const profileOrganizationForm = document.getElementById('profileOrganization__form');
 
-  profileOrganizationAdd.addEventListener('click', (e) => {
-    if (profileOrganizationForm.classList.contains('open')) {
-      e.target.textContent = 'Добавить организацию'
-    } else {
-      e.target.textContent = 'Отмена'
-    }
-    profileOrganizationForm.classList.toggle('open')
-  })
+  if (profileOrganizationAdd && profileOrganizationForm) {
+    profileOrganizationAdd.addEventListener('click', (e) => {
+      if (profileOrganizationForm.classList.contains('open')) {
+        e.target.textContent = 'Добавить организацию'
+      } else {
+        e.target.textContent = 'Отмена'
+      }
+      profileOrganizationForm.classList.toggle('open')
+    })
+  }
 }

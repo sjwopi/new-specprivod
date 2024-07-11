@@ -27,13 +27,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
+
+    p,
+    a {
+      font-size: 15px;
+      line-height: 16px;
+    }
   }
 
   &__phone {
     display: block;
     padding-left: 24px;
-    background: url(../assets/icons/phone.svg) 0 center/16px no-repeat;
+    background: url(../assets/icons/phone.svg) 0 center/contain no-repeat;
   }
 
   &__top-icons {
@@ -221,6 +227,11 @@
     margin-bottom: 20px;
   }
 
+  &__top-icon {
+    width: 26px;
+    height: 26px;
+  }
+
   &__bottom-container {
     display: flex;
     flex-direction: column;
@@ -277,36 +288,198 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1900px) {
   .header {
-    &__top-container {
-      gap: 30px;
+    margin-bottom: 25px;
+
+    &__logo {
+      width: 120px;
+      height: 35px;
     }
 
+    &__top-container {
+      gap: 40px;
+    }
+
+    &__call {
+      font-size: 13px;
+      line-height: 14px;
+      white-space: nowrap;
+      padding: 8px 15px;
+    }
+
+    &__nav {
+      gap: 40px;
+    }
+
+    &__link {
+      font-size: 13px;
+      line-height: 14px;
+
+      &.dropdownbtn {
+        padding-right: 13px;
+
+        &::after {
+          width: 8px;
+          height: 4px;
+        }
+      }
+    }
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+
+      span {
+        top: -6px;
+        right: -6px;
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+      }
+    }
+
+    &__top {
+      padding: 8px calc((100% - var(--desktop-width)) / 2);
+    }
+
+    &__main {
+      padding: 10px calc((100% - var(--desktop-width)) / 2);
+    }
+
+    &__btns {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    margin-bottom: 25px;
+
+    &__top {
+      a {
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+
+    &__top-container {
+      gap: 40px;
+
+      p,
+      a {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+
+    &__top-icons img {
+      width: 22px;
+      height: 22px;
+    }
+
+    &__phone {
+      display: block;
+      padding-left: 16px;
+    }
+
+    &__nav {
+      gap: 32px;
+    }
+
+    &__link {
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &__call {
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &__btns {
+      gap: 16px;
+    }
+
+    &__dropdown {
+      padding: 20px calc((100% - var(--desktop-width)) / 2 + 7%);
+    }
+
+    &__dropdown-link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
     &__nav {
       gap: 20px;
     }
 
-    &__dropdown {
-      padding: 25px calc((100% - var(--desktop-width)) / 2 + 7%);
+    &__logo {
+      width: 100px;
+      height: 25px;
     }
 
-    &__btns {
-      gap: 20px;
+
+    &__top-container {
+      gap: 30px;
+
+      p,
+      a {
+        font-size: 10px;
+        line-height: 11px;
+      }
+    }
+
+    &__top-icons img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &__link {
+      font-size: 9px;
+      line-height: 10px;
+    }
+
+    &__call {
+      padding: 5px 8px;
+      font-size: 9px;
+      line-height: 11px;
+    }
+
+    &__main {
+      padding: 6px calc((100% - var(--desktop-width)) / 2);
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+
+      span {
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .header {
-    &__logo {
-      width: 120px;
-      height: 35px;
-    }
-    &__main {
-      justify-content: space-between;
-    }
-
     &__top {
       gap: 15px;
     }
@@ -315,32 +488,23 @@
       gap: 25px;
     }
 
-    &__btns {
-      gap: 30px;
-    }
-
     &__nav {
       gap: 15px;
       justify-content: center;
     }
 
-    &__link {
-      font-size: 14px;
-    }
-
-    &__dropdown {
-      padding: 25px calc((100% - var(--desktop-width)) / 2);
-    }
-    &__call {
-      padding: 8px 10px;
-      font-size: 14px;
-    }
-    &__icon {
-      height: 33px;
-      width: 33px;
-    }
     &__btns {
       gap: 10px;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 }
@@ -414,6 +578,29 @@
       font-size: 12px;
       line-height: 14px;
       padding-left: 18px;
+    }
+
+    &__call {
+      font-size: 15px;
+      line-height: 16px;
+      padding: 10px 20px;
+      font-weight: 400;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+      }
     }
 
     &.open {

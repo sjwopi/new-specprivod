@@ -102,25 +102,54 @@
   }
 }
 
-
-
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1900px) {
   .banner {
     &__main {
       padding: 40px;
+      gap: 30px;
     }
 
     &__title {
-      max-width: 65%;
-      font-size: 32px;
+      max-width: 70%;
+      font-size: 28px;
+      line-height: 32px;
     }
 
     &__bg-img {
       height: 90%;
       max-width: 45%;
     }
+
+    &__sidebar {
+      padding: 80px 30px;
+    }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .banner {
+    &__main {
+      padding: 40px;
+      gap: 30px;
+    }
+
+    &__title {
+      max-width: 70%;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__bg-img {
+      height: 90%;
+      max-width: 45%;
+    }
+
+    &__sidebar {
+      padding: 80px 30px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .banner {
@@ -243,7 +272,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 520px) {
   .banner {
