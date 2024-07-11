@@ -59,7 +59,7 @@ body {
     border-radius: var(--radius-full);
     border: none;
   }
-  
+
   &.open {
     overflow: hidden;
   }
@@ -176,17 +176,14 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {
-/*   body {
-    --desktop-width: 960px;
-  } */
-
+@media screen and (max-width: 1600px) {
   .btn {
-    font-size: 15px;
-    line-height: 16px;
-    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 8px 20px;
   }
-
+}
+@media screen and (max-width: 1200px) {
   .title {
     margin-bottom: 20px;
     font-size: 20px;
@@ -197,6 +194,11 @@ a:hover {
 @media screen and (max-width: 1000px) {
   body {
     --desktop-width: calc(100% - 32px);
+  }
+  .btn {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 10px 20px;
   }
 }
 
