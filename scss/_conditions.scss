@@ -40,6 +40,12 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .conditions {
+    margin: 0 auto 60px auto;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .conditions {
     flex-wrap: wrap;

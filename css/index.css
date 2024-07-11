@@ -890,6 +890,7 @@ a:hover {
 }
 @media screen and (max-width: 1400px) {
   .banner {
+    margin: 0 auto 60px auto;
     gap: 10px;
   }
   .banner__sidebar {
@@ -944,9 +945,6 @@ a:hover {
   }
 }
 @media screen and (max-width: 1000px) {
-  .banner {
-    margin: 0 auto 60px auto;
-  }
   .banner__bg-img {
     height: 100%;
     max-width: 38%;
@@ -1056,7 +1054,7 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 20px auto 0 auto;
-  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+  background: linear-gradient(75deg, var(--cian-color) -50%, var(--dark-color) 75%);
 }
 
 .categoryItem {
@@ -1074,6 +1072,13 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+.categoryItem__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .categoryItem__img {
   width: 40%;
   -o-object-fit: contain;
@@ -1084,6 +1089,8 @@ a:hover {
   flex-direction: column;
   gap: 30px;
   width: 55%;
+  height: 100%;
+  justify-content: space-between;
 }
 .categoryItem__content h5 {
   font-family: var(--font-famile-sub);
@@ -1111,31 +1118,81 @@ a:hover {
   background: url(../assets/icons/arrow-for-link.svg) center/contain no-repeat;
 }
 
-@media screen and (max-width: 1200px) {
-  .categories__list-item {
-    width: calc(50% - 10px);
-  }
-}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1900px) {
   .categoryItem {
-    padding: 35px 15px;
-  }
-  .categoryItem__img {
-    width: 40%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    padding: 30px;
   }
   .categoryItem__content {
     gap: 20px;
-    width: 55%;
   }
   .categoryItem__content h5 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 24px;
   }
   .categoryItem__content a {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .categories__list {
+    gap: 12px;
+  }
+  .categories__list-item {
+    width: calc((100% - 24px) / 3);
+  }
+  .categoryItem {
+    padding: 40px 20px;
+  }
+  .categoryItem__content {
+    gap: 10px;
+  }
+  .categoryItem__content h5 {
+    font-size: 18px;
     line-height: 20px;
+  }
+  .categoryItem__content a {
+    font-size: 12px;
+  }
+  .categoryItem__content a::after {
+    width: 7px;
+    right: -12px;
+    background: url(../assets/icons/arrow-for-link.svg) center/contain no-repeat;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .categories {
+    margin: 0 auto 60px auto;
+  }
+  .categoryItem {
+    padding: 30px 15px;
+  }
+  .categoryItem__content {
+    gap: 10px;
+  }
+  .categoryItem__content h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .categoryItem__content a {
+    font-size: 11px;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .categories__list {
+    gap: 8px;
+  }
+  .categories__list-item {
+    width: calc((100% - 16px) / 3);
+  }
+  .categoryItem {
+    gap: 10px;
+  }
+  .categoryItem__img {
+    width: 36;
+  }
+  .categoryItem__content {
+    width: calc(64% - 10px);
   }
 }
 @media screen and (max-width: 720px) {
@@ -1153,19 +1210,18 @@ a:hover {
   }
   .categories__list {
     gap: 12px;
-    flex-direction: column;
   }
   .categories__list-item {
-    width: 100%;
+    width: calc(50% - 6px);
   }
-  .categoryItem__img {
-    width: 30%;
-  }
-  .categoryItem__content {
-    width: 65%;
+  .categoryItem {
+    padding: 40px 15px;
   }
 }
 @media screen and (max-width: 520px) {
+  .categories__list-item {
+    width: 100%;
+  }
   .categoryItem__content {
     gap: 15px;
   }
@@ -1235,6 +1291,11 @@ a:hover {
   height: 100%;
 }
 
+@media screen and (max-width: 1400px) {
+  .popularCategories {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .popularCategories__item {
     padding: 20px;
@@ -1333,6 +1394,11 @@ a:hover {
     padding: 40px 12px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .advantages {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .advantages {
     padding: 40px;
@@ -1351,7 +1417,6 @@ a:hover {
 @media screen and (max-width: 1000px) {
   .advantages {
     width: 100%;
-    margin: 0 0 60px 0;
   }
   .advantages__container {
     gap: 10px;
@@ -1547,6 +1612,11 @@ a:hover {
   .catalogItem__btn {
     font-size: 15px;
     padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .catalogList {
+    margin: 0 auto 60px auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -2025,6 +2095,14 @@ a:hover {
     grid-template-columns: 1fr 440px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .productPage {
+    margin: 0 auto 60px auto;
+  }
+  .productDescription {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .productPage__imgs {
     width: calc(100% - 290px);
@@ -2065,9 +2143,6 @@ a:hover {
   }
   .productPage__description {
     display: none;
-  }
-  .productDescription {
-    margin-bottom: 60px;
   }
   .productDescription__slider label {
     padding: 8px 22px;
@@ -2292,7 +2367,7 @@ a:hover {
 @media screen and (max-width: 1400px) {
   .projects {
     width: var(--desktop-width);
-    margin: 0 auto 100px auto;
+    margin: 0 auto 60px auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -2388,6 +2463,11 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .conditions {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .conditions {
     flex-wrap: wrap;
@@ -2626,6 +2706,11 @@ a:hover {
   color: var(--gray-text-color);
 }
 
+@media screen and (max-width: 1400px) {
+  .about {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .about {
     flex-direction: column;
@@ -2638,9 +2723,6 @@ a:hover {
   }
 }
 @media screen and (max-width: 720px) {
-  .about {
-    margin-bottom: 60px;
-  }
   .about__text {
     font-size: 12px;
     line-height: 15px;
@@ -3276,10 +3358,12 @@ a:hover {
   padding: 14px 100px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .profile {
     margin: 0 auto 60px auto;
   }
+}
+@media screen and (max-width: 1000px) {
   .profile__fieldset {
     flex-direction: column;
     gap: 10px;
@@ -4247,10 +4331,12 @@ a:hover {
   color: green;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1400px) {
   .delivery {
     margin: 0 auto 60px auto;
   }
+}
+@media screen and (max-width: 720px) {
   .delivery ul {
     padding-left: 15px;
   }

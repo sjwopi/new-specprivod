@@ -23,6 +23,11 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .about {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .about {
     flex-direction: column;
@@ -38,8 +43,6 @@
 
 @media screen and (max-width: 720px) {
   .about {
-    margin-bottom: 60px;
-
     &__text {
       font-size: 12px;
       line-height: 15px;

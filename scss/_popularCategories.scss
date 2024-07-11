@@ -59,6 +59,11 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .popularCategories {
+    margin: 0 auto 60px auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .popularCategories {
     &__item {

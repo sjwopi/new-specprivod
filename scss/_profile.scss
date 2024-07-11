@@ -102,10 +102,13 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .profile {
     margin: 0 auto 60px auto;
-    
+  }
+}
+@media screen and (max-width: 1000px) {
+  .profile {
     &__fieldset {
       flex-direction: column;
       gap: 10px;

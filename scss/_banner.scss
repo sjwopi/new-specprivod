@@ -174,9 +174,9 @@
     }
   }
 }
-
 @media screen and (max-width: 1400px) {
   .banner {
+    margin: 0 auto 60px auto;
     gap: 10px;
 
     &__sidebar {
@@ -246,8 +246,6 @@
 
 @media screen and (max-width: 1000px) {
   .banner {
-    margin: 0 auto 60px auto;
-
     &__bg-img {
       height: 100%;
       max-width: 38%;
