@@ -157,12 +157,21 @@ a:hover {
   body {
     --desktop-width: 70%;
   }
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 @media screen and (max-width: 1600px) {
   .btn {
     font-size: 13px;
     line-height: 14px;
     padding: 8px 20px;
+  }
+  .title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -858,7 +867,6 @@ a:hover {
     gap: 20px;
   }
   .banner__title {
-    max-width: 70%;
     font-size: 22px;
     line-height: 26px;
   }
@@ -924,24 +932,6 @@ a:hover {
   .banner__title {
     font-size: 18px;
     line-height: 22px;
-  }
-  .banner__bg-img {
-    /* height: 100%;
-    max-width: 70%;
-    bottom: 0;
-    top: auto;
-    transform: translateY(0); */
-  }
-  .banner__sidebar {
-    /*   min-width: 100%;
-    max-width: 100%;
-    display: flex;
-    padding: 15px 40px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    align-items: center;
-    background-image: url(../assets/img/banner-small-mobile.jpg); */
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1194,6 +1184,14 @@ a:hover {
   .categoryItem__content {
     width: calc(64% - 10px);
   }
+  .categoryItem__content h5 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .categoryItem__content a {
+    font-size: 9px;
+    line-height: 11px;
+  }
 }
 @media screen and (max-width: 720px) {
   .categories {
@@ -1260,7 +1258,7 @@ a:hover {
   text-align: center;
 }
 .popularCategories__img {
-  width: 60%;
+  width: 90%;
   height: 240px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1269,6 +1267,7 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 20px;
 }
 .popularCategories__bg-img {
@@ -1282,7 +1281,7 @@ a:hover {
      object-fit: cover;
 }
 .popularCategories__link {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1291,37 +1290,63 @@ a:hover {
   height: 100%;
 }
 
+@media screen and (max-width: 1900px) {
+  .popularCategories__item {
+    padding: 55px 20px;
+    gap: 16px;
+  }
+  .popularCategories__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .popularCategories__img {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .popularCategories__img {
+    height: 200px;
+  }
+  .popularCategories__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .popularCategories {
     margin: 0 auto 60px auto;
   }
+  .popularCategories__item {
+    padding: 35px 10px;
+  }
+  .popularCategories__btns {
+    gap: 10px;
+  }
+  .popularCategories__img {
+    height: 175px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .popularCategories__item {
-    padding: 20px;
+    padding: 20px 10px;
   }
   .popularCategories__title {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .popularCategories__img {
-    height: 150px;
+    height: 135px;
   }
   .popularCategories__btns {
-    flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
   .popularCategories__btns .btn {
-    width: 100%;
-    text-align: center;
+    padding: 8px 18px;
+    font-size: 11px;
+    line-height: 12px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .popularCategories__item {
-    width: 70%;
-    min-width: 250px;
-    max-width: 350px;
-  }
   .popularCategories__slider {
     overflow: hidden;
   }
@@ -1339,6 +1364,27 @@ a:hover {
   .popularCategories__slider-scrollbar .swiper-scrollbar-drag {
     background-color: var(--blue-color) !important;
     border-radius: 3px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .popularCategories__item {
+    width: 70%;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: 300px;
+    padding: 20px 15px;
+  }
+  .popularCategories__img {
+    width: 210px;
+    height: 145px;
+  }
+  .popularCategories__title {
+    max-width: 210px;
+  }
+  .popularCategories__btns .btn {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 20px;
   }
 }
 .advantages {

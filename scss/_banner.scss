@@ -137,7 +137,6 @@
     }
 
     &__title {
-      max-width: 70%;
       font-size: 22px;
       line-height: 26px;
     }
@@ -220,26 +219,6 @@
     &__title {
       font-size: 18px;
       line-height: 22px;
-    }
-
-    &__bg-img {
-      /* height: 100%;
-      max-width: 70%;
-      bottom: 0;
-      top: auto;
-      transform: translateY(0); */
-    }
-
-    &__sidebar {
-      /*   min-width: 100%;
-      max-width: 100%;
-      display: flex;
-      padding: 15px 40px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      column-gap: 40px;
-      align-items: center;
-      background-image: url(../assets/img/banner-small-mobile.jpg); */
     }
   }
 }

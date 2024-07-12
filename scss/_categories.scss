@@ -186,6 +186,16 @@
 
     &__content {
       width: calc(64% - 10px);
+
+      h5 {
+        font-size: 13px;
+        line-height: 15px;
+      }
+
+      a {
+        font-size: 9px;
+        line-height: 11px;
+      }
     }
   }
 }
