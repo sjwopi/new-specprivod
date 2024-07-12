@@ -3,7 +3,7 @@
   margin: 0 auto 100px auto;
 
   &.products {
-    width: var(--desktop-width);
+    width: var(--desktop-width) !important;
 
     .catalogList__list {
       display: flex;
@@ -29,6 +29,29 @@
     width: 100%;
     padding: 0 18px;
     overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 18px;
+      background-image: linear-gradient(90deg, transparent 0%, var(--bg-color) 50%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 18px;
+      background-image: linear-gradient(90deg, var(--bg-color) 50%, transparent 100%);
+    }
   }
 
   &__list {
@@ -338,16 +361,24 @@
 
 @media screen and (max-width: 1400px) {
   .catalogList {
+    width: calc(var(--desktop-width) + 24px);
     margin: 0 auto 60px auto;
 
     &__item {
-      width: calc((100% - 40px) / 6);
+      width: calc((100% - 50px) / 6);
     }
 
     &__slider-pagination {
       .swiper-pagination-bullet {
         width: 5px;
         height: 5px;
+      }
+    }
+
+    &__slider {
+      padding: 12px;
+      &::after, &::before {
+        width: 10px;
       }
     }
   }
@@ -420,7 +451,7 @@
 @media screen and (max-width: 1200px) {
   .catalogList {
     &__item {
-      width: calc((100% - 31px) / 5);
+      width: calc((100% - 40px) / 5);
     }
 
     &.products {
@@ -443,6 +474,10 @@
       padding: 0;
       overflow: visible;
       margin-bottom: 20px;
+
+      &::after, &::before {
+        display: none;
+      }
     }
 
     &__list {
