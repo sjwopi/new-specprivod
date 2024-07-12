@@ -1,8 +1,10 @@
 .catalogList {
-  width: var(--desktop-width);
+  width: calc(var(--desktop-width) + 36px);
   margin: 0 auto 100px auto;
 
   &.products {
+    width: var(--desktop-width);
+
     .catalogList__list {
       display: flex;
       flex-direction: row;
@@ -31,7 +33,11 @@
 
   &__list {
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  &__item {
+    width: calc((100% - 150px) / 6);
   }
 
   &__slider-pagination {
@@ -77,7 +83,7 @@
   }
 
   &__header {
-    inline-size: 100%;
+    width: 100%;
     display: flex;
     justify-content: end;
     position: relative;
@@ -179,38 +185,248 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .catalogList.products {
-    .catalogList__item {
-      width: calc((100% - 80px) / 5);
+@media screen and (max-width: 1900px) {
+  .catalogList {
+    &__item {
+      width: calc((100% - 72px) / 6);
+    }
+
+    &.products {
+      .catalogList__list {
+        gap: 15px;
+      }
+
+      .catalogList__item {
+        width: calc((100% - 75px) / 6);
+      }
     }
   }
 
   .catalogItem {
     padding: 12px 12px 20px 12px;
 
-    &__basket {
-      width: 30px;
-      height: 30px;
-      background-size: 18px;
+    &__price {
+      font-size: 14px;
+      line-height: 15px;
     }
 
+    &__basket {
+      width: 26px;
+      height: 26px;
+      background-size: 16px;
+    }
+
+    &__img {
+      max-height: 130px;
+    }
+
+    &__caption {
+      font-size: 14px;
+      line-height: 15px;
+      padding-left: 12px;
+
+      &::before {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &__hit {
+      padding: 2px 6px;
+      border-radius: 4px;
+
+      span {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+
+    &__favorite {
+      width: 18px;
+      height: 18px;
+    }
+
+
     &__btn {
-      font-size: 15px;
-      padding: 10px 20px;
+      font-size: 14px;
+      padding: 8px 16px;
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .catalogList {
+    &__list {
+      padding-bottom: 5px;
+    }
+
+    &__slider-pagination {
+      .swiper-pagination-bullet {
+        margin: 0 3px !important;
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &.products {
+      .catalogList__list {
+        gap: 10px;
+      }
+
+      .catalogList__item {
+        width: calc((100% - 50px) / 6);
+      }
+    }
+  }
+
+  .catalogItem {
+    padding: 10px 10px 16px 10px;
+
+    &__price {
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    &__basket {
+      width: 22px;
+      height: 22px;
+      background-size: 14px;
+    }
+
+    &__img {
+      max-height: 120px;
+    }
+
+    &__name {
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    &__caption {
+      font-size: 12px;
+      line-height: 13px;
+      padding-left: 10px;
+
+      &::before {
+        width: 5px;
+        height: 5px;
+      }
+    }
+
+    &__hit {
+      padding: 2px 4px;
+
+      span {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+
+    &__favorite {
+      width: 16px;
+      height: 16px;
+    }
+
+
+    &__btn {
+      font-size: 12px;
+      line-height: 13px;
+      padding: 8px 16px;
+    }
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .catalogList {
     margin: 0 auto 60px auto;
+
+    &__item {
+      width: calc((100% - 40px) / 6);
+    }
+
+    &__slider-pagination {
+      .swiper-pagination-bullet {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+
+  .catalogItem {
+    padding: 8px 8px 14px 8px;
+    gap: 5px;
+    position: relative;
+
+    &__header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 8px;
+    }
+
+    &__hit {
+      padding: 0 2px;
+      line-height: 9px;
+
+      span {
+        font-size: 9px;
+        line-height: 9px;
+      }
+    }
+
+    &__favorite {
+      width: 13px;
+      height: 13px;
+    }
+
+    &__main {
+      gap: 2px;
+    }
+
+    &__img {
+      margin-top: 10px;
+      max-height: 100px;
+    }
+
+    &__name {
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &__caption {
+      font-size: 10px;
+      line-height: 11px;
+    }
+
+    &__btn {
+      font-size: 10px;
+      line-height: 11px;
+    }
+
+    &__price {
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &__basket {
+      width: 20px;
+      height: 20px;
+      background-size: 13px;
+    }
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .catalogList.products {
-    .catalogList__item {
-      width: calc((100% - 60px) / 4);
+  .catalogList {
+    &__item {
+      width: calc((100% - 31px) / 5);
+    }
+
+    &.products {
+      .catalogList__item {
+        width: calc((100% - 40px) / 5);
+      }
     }
   }
 }
@@ -218,13 +434,6 @@
 @media screen and (max-width: 1000px) {
   .catalogList {
     width: var(--desktop-width);
-
-    &.products {
-      .catalogList__item {
-        display: block;
-        width: calc((100% - 40px) / 3);
-      }
-    }
 
     &__title {
       margin-left: 0;
@@ -245,16 +454,25 @@
     }
 
     &__item {
-      width: calc((100% - 12px) / 3);
+      width: calc((100% - 18px) / 4);
       display: none;
 
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6) {
+      &:nth-child(4) {
         display: block;
+      }
+    }
+
+    &.products {
+      .catalogList__list {
+        gap: 6px;
+      }
+
+      .catalogList__item {
+        width: calc((100% - 18px) / 4);
+        display: block !important;
       }
     }
 
@@ -265,6 +483,22 @@
 }
 
 @media screen and (max-width: 720px) {
+  .catalogList {
+    &__item {
+      width: calc((100% - 12px) / 3);
+
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    &.products {
+      .catalogList__item {
+        width: calc((100% - 12px) / 3);
+      }
+    }
+  }
+
   .catalogItem {
     padding: 10px 10px 15px 10px;
     gap: 7px;
@@ -322,17 +556,17 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 520px) {
   .catalogList {
     &__item {
       width: calc(50% - 3px);
+
+      &:nth-child(4) {
+        display: block;
+      }
     }
 
     &.products {
-      .catalogList__list {
-        gap: 6px;
-      }
-
       .catalogList__item {
         width: calc(50% - 3px);
       }

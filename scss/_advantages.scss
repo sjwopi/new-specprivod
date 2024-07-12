@@ -62,12 +62,18 @@
 }
 @media screen and (max-width: 1600px) {
   .advantages {
-    padding: 64px 50px;
+    padding: 48px 36px;
 
     &__container {
       gap: 12px;
     }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
     &__item {
+      padding: 25px 16px;
       width: calc(25% - 9px);
       gap: 25px;
 
@@ -82,10 +88,9 @@
 @media screen and (max-width: 1400px) {
   .advantages {
     margin: 0 auto 60px auto;
-    padding: 55px 42px;
 
     &__item {
-      gap: 20px;
+      gap: 15px;
 
       p {
         font-size: 12px;
@@ -105,10 +110,6 @@
 
     &__container {
       gap: 10px;
-    }
-
-    &__title {
-      margin-bottom: 20px;
     }
 
     &__item {

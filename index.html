@@ -972,8 +972,8 @@
           el: ".catalogList__slider-pagination"
         },
         grabCursor: true,
-        slidesPerView: window.innerWidth > 1600 ? 6 : window.innerWidth > 1400 ? 5 : 4,
-        spaceBetween: 30
+        slidesPerView: 'auto',
+        spaceBetween: window.innerWidth > 1900 ? 30 : window.innerWidth > 1400 ? 15 : 10
       });
 
       var swiperProjects = new Swiper(".projects__slider", {
