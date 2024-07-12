@@ -140,6 +140,10 @@
     width: calc(var(--desktop-width) + 40px);
     margin: 0 auto 60px auto;
 
+    &__header {
+      margin-bottom: 15px;
+    }
+
     &__slider {
       padding: 0 20px;
     }
