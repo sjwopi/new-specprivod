@@ -8,7 +8,7 @@
   justify-content: space-between;
   background: url(../assets/img/feedback.jpg) center/cover no-repeat;
   padding: 80px 140px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 100px auto;
 
   &__container {
     flex: 2;
@@ -55,13 +55,14 @@
 
   &__social-mobile {
     display: none;
-    width: 100%;
+    width: fit-content;
     justify-content: start;
     border-radius: var(--radius-circle);
 
     img {
-      width: 250px;
-      height: 190px;
+      width: 200px;
+      height: 130px;
+      object-fit: contain;
       border-radius: var(--radius-circle);
     }
   }
@@ -124,12 +125,141 @@
       }
     }
   }
+  &__btn {
+    color: var(--blue-color) !important;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .feedback {
+    padding: 50px 100px;
+
+    &__container {
+      gap: 40px;
+    }
+
+    &__input {
+      padding: 12px 24px;
+    }
+
+    &__main {
+      gap: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {
   .feedback {
+    padding: 40px 80px;
+
+    &__container {
+      gap: 30px;
+    }
+
+    &__header {
+      gap: 15px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+
+    &__fieldset {
+      gap: 10px;
+    }
+
+    &__input {
+      padding: 10px 20px;
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    &__main {
+      gap: 10px;
+    }
+
     &__social {
-      justify-content: end;
+      width: 220px;
+      height: 220px;
+    }
+
+    &__policy {
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+
+      label {
+        font-size: 13px;
+        line-height: 14px;
+      }
+
+      a {
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .feedback {
+    margin: 0 auto 60px auto;
+
+    &__container {
+      gap: 20px;
+    }
+
+    &__header {
+      gap: 10px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 22px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+
+    &__input {
+      padding: 8px 16px;
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    &__social {
+      width: 180px;
+      height: 180px;
+    }
+
+    &__policy {
+      input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+      }
+
+      label {
+        font-size: 12px;
+        line-height: 13px;
+      }
+
+      a {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+    &__btn {
+      font-size: 11px !important;
+      line-height: 12px !important;
     }
   }
 }
@@ -138,29 +268,19 @@
   .feedback {
     padding: 50px;
 
-    &__fieldset {
-      flex-direction: column;
-      flex: 2;
-    }
-
     &__social {
-      display: none;
-    }
-
-    &__social-mobile {
-      display: flex;
-      flex: 1;
+      max-width: 150px;
+      height: 150px;
     }
   }
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .feedback {
     padding: 40px 15px;
     background-image: url(../assets/img/feedback-mobile.jpg);
-    margin: 0 auto 60px auto;
-    gap: 0px;
+    gap: 20px;
 
     &__form {
       gap: 20px;
@@ -188,9 +308,18 @@
     }
 
     &__fieldset {
-      flex: 2;
-      max-width: 70%;
+      flex: 1;
+      width: 70%;
       gap: 10px;
+      flex-direction: column;
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &__social-mobile {
+      display: flex;
     }
 
     &__input {
@@ -219,7 +348,14 @@
         line-height: 15px;
       }
     }
+  }
+}
 
+@media screen and (max-width: 520px) {
+  .feedback {
+    &__main {
+      gap: 20px;
+    }
     &__social-mobile {
       img {
         width: 84px;
