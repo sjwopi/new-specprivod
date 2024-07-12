@@ -13,6 +13,7 @@
   }
 
   &__container {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -34,18 +35,14 @@
     line-height: 34px;
     color: var(--white-text-color);
     font-weight: 400;
-    margin-bottom: 22px
-  }
-
-  &__captions {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+    margin-bottom: 22px;
   }
 
   &__caption {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     flex: 1;
 
     span {
@@ -54,7 +51,8 @@
 
     p,
     a,
-    span {
+    span,
+    u {
       white-space: nowrap;
       font-size: 14px;
       font-weight: 300;
@@ -118,6 +116,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 12px;
 
     img {
       height: 35px;
@@ -125,24 +124,148 @@
       object-fit: contain;
     }
   }
+
+  &__captions {
+    display: none;
+    flex-direction: column;
+  }
 }
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1900px) {
   .footer {
+    padding: 45px calc((100% - var(--desktop-width)) / 2);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .footer {
+    gap: 30px;
+
     &__main {
-      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
     }
 
     &__container {
-      min-width: calc(50% - 20px);
-      max-width: calc(50% - 20px);
+      gap: 6px;
+
+      a {
+        font-size: 13px;
+        line-height: 14px;
+      }
+
+      &_contacts {
+        gap: 15px;
+      }
     }
 
-    &__captions {
-      flex-wrap: wrap;
+    &__caption {
+      span {
+        font-size: 12px;
+        line-height: 13px;
+        margin-right: 8px;
+      }
+
+      p,
+      a,
+      span,
+      u {
+        font-size: 12px;
+        line-height: 13px;
+      }
     }
 
+    &__phones {
+      padding-left: 20px;
+      background-size: 12px;
+      gap: 5px;
+
+      a {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+
+    &__place {
+      padding-left: 20px;
+      background-size: 10px;
+
+      p {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    &__icons {
+      gap: 8px;
+
+      img {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 25px calc((100% - var(--desktop-width)) / 2);
+
+    &__container {
+      gap: 4px;
+
+      a {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+
+    &__caption {
+      span {
+        font-size: 10px;
+        line-height: 11px;
+        margin-right: 6px;
+      }
+
+      p,
+      a,
+      span,
+      u {
+        font-size: 10px;
+        line-height: 11px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 14px;
+    }
+
+    &__icons {
+      gap: 6px;
+
+      img {
+        height: 23px;
+        width: 23px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
     &__caption {
       min-width: 100%;
 
@@ -161,8 +284,32 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .footer {
+    &__main {
+      flex-wrap: wrap;
+    }
 
-@media screen and (max-width: 720px) {
+    &__container {
+      min-width: calc(50% - 15px);
+      max-width: calc(50% - 15px);
+    }
+
+    &__caption {
+      display: none;
+    }
+
+    &__captions {
+      display: flex;
+
+      .footer__caption {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
   .footer {
     background-image: url(../assets/img/footer-mobile.jpg);
 
