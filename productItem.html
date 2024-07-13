@@ -126,6 +126,10 @@
                 class="swiper-slide productPage__nav-item"></img>
               <img src="./assets/img/sub/product-image.png" alt="картинка товара"
                 class="swiper-slide productPage__nav-item"></img>
+              <img src="./assets/img/sub/product-image.png" alt="картинка товара"
+                class="swiper-slide productPage__nav-item"></img>
+              <img src="./assets/img/sub/product-image.png" alt="картинка товара"
+                class="swiper-slide productPage__nav-item"></img>
             </div>
             <div class="swiper-scrollbar productPage__nav-scrollbar"></div>
           </nav>
@@ -496,9 +500,11 @@
       </div>
 
       <div class="productDescription__dimensions">
-        <p class="productDescription__dimensions-text">Cерия С c манометром и кронштейном в комплекте, присоединение G1/4, пропускная
+        <p class="productDescription__dimensions-text">Cерия С c манометром и кронштейном в комплекте, присоединение
+          G1/4, пропускная
           способность 500 Нл/мин. Сброс конденсата полуавтоматический. Аналог Festo.</p>
-        <img class="productDescription__dimensions-main" src="./assets/img/sub/dimensions.png" alt="чертеж с размерами детали">
+        <img class="productDescription__dimensions-main" src="./assets/img/sub/dimensions.png"
+          alt="чертеж с размерами детали">
 
         <table class="productDescription__dimensions-table">
           <thead>
@@ -881,13 +887,12 @@
       scrollbar: {
         el: '.productPage__nav-scrollbar',
         draggable: true,
-        dragSize: window.innerWidth > 580 ? 100 : 200,
+        dragSize: window.innerWidth > 720 ? 100 : 150,
       },
-      direction: window.innerWidth > 580 ? "vertical" : "horizontal",
+      direction: window.innerWidth > 720 ? "vertical" : "horizontal",
       slidesPerView: 'auto',
       spaceBetween: 10,
-      grabCursor: true,
-      freeMode: true,
+      grabCursor: true
     });
 
     if (window.innerWidth > 1000) {
@@ -896,8 +901,8 @@
           el: ".catalogList__slider-pagination"
         },
         grabCursor: true,
-        slidesPerView: window.innerWidth > 1600 ? 6 : window.innerWidth > 1400 ? 5 : 4,
-        spaceBetween: 30
+        slidesPerView: 'auto',
+        spaceBetween: window.innerWidth > 1900 ? 30 : window.innerWidth > 1400 ? 15 : 10
       });
     }
   </script>

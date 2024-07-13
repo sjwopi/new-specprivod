@@ -30,6 +30,40 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .breadcrumb {
+    margin: 0 0 30px 0;
+    gap: 40px;
+  
+    &__item {
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+  
+      &::after {
+        width: 16px;
+        right: -27px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .breadcrumb {
+    margin: 0 0 20px 0;
+    gap: 30px;
+  
+    &__item {
+      position: relative;
+      font-size: 11px;
+      line-height: 13px;
+  
+      &::after {
+        width: 10px;
+        right: -20px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1000px) {
   .breadcrumb {
     display: none;
