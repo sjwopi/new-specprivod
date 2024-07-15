@@ -32,6 +32,7 @@
   &__footer {
     width: 100%;
     padding: 0 0 0 65px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,6 +80,10 @@
     .profile__form {
       max-width: 100%;
     }
+    
+    .profile__subtitle {
+      color: black;
+    }
   }
 
   &__delivery {
@@ -120,65 +125,96 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1900px) {
   .profileCart {
     &__header {
       gap: 30px;
     }
 
     &__title:first-child {
-      flex: 4;
+      flex: 5;
     }
 
     &__buy {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 24px;
+      line-height: 26px;
 
       span {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 26px;
       }
+    }
+
+    &__list {
+      padding: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .profileCart {
+    &__title {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__buy {
+      font-size: 18px;
+      line-height: 20px;
+
+      span {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__footer {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .profileCart {
+    &__title {
+      font-size: 13px;
+      line-height: 14px;
+    }
+    &__date {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    &__buy {
+      font-size: 16px;
+      line-height: 18px;
+
+      span {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    &__footer {
+      margin-bottom: 16px;
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .profileCart {
+    &__header {
+      display: none;
+    }
+
     &__list {
       padding: 10px;
       gap: 20px;
-    }
-
-    &__buy {
-      font-size: 32px;
-      line-height: 36px;
-
-      span {
-        font-size: 32px;
-        line-height: 36px;
-      }
     }
   }
 }
 
 @media screen and (max-width: 1000px) {
   .profileCart {
-    &__header {
-      display: none;
-    }
-
     &__footer {
       padding-left: 20px;
-    }
-
-    &__buy {
-      font-size: 26px;
-      line-height: 30px;
-
-      span {
-        font-size: 26px;
-        line-height: 30px;
-      }
     }
 
     &__total {
@@ -187,6 +223,12 @@
 
     &__save {
       padding: 10px 30px;
+    }
+
+    &__list {
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
     }
   }
 }

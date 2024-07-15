@@ -9,6 +9,7 @@
   &__title {
     color: var(--dark-text-color);
     font-weight: 700;
+    margin: 0;
   }
 
   &__container {
@@ -101,12 +102,61 @@
   }
 }
 
+@media screen and (max-width: 1900px) {
+  .profile {
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .profile {
+    &__container {
+      gap: 12px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__data {
+      gap: 12px;
+    }
+  }
+}
 
 @media screen and (max-width: 1400px) {
   .profile {
     margin: 0 auto 60px auto;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .profile {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .profile {
     &__fieldset {
@@ -119,8 +169,8 @@
     }
 
     &__subtitle {
-      font-size: 22px;
-      line-height: 26px;
+      font-size: 18px;
+      line-height: 21px;
     }
 
 
