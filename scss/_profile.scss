@@ -146,12 +146,12 @@
     &__input {
       padding: 10px 20px;
       border: 1px solid var(--blue-color);
-      font-size: 13px;
-      line-height: 14px;
+      font-size: 12px;
+      line-height: 13px;
 
       &::placeholder {
-        font-size: 13px;
-        line-height: 14px;
+        font-size: 12px;
+        line-height: 13px;
       }
     }
 
@@ -170,6 +170,17 @@
 @media screen and (max-width: 1400px) {
   .profile {
     margin: 0 auto 60px auto;
+
+    &__input {
+      padding: 8px 20px;
+      font-size: 11px;
+      line-height: 12px;
+
+      &::placeholder {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
   }
 }
 
@@ -210,7 +221,6 @@
 
     &__input {
       padding: 12px 20px;
-      border: 1.2px solid var(--blue-color);
     }
 
     &__checkbox {

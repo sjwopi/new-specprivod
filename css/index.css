@@ -4452,16 +4452,16 @@ a:hover {
   .profile__input {
     padding: 10px 20px;
     border: 1px solid var(--blue-color);
-    font-size: 13px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 13px;
   }
   .profile__input::-moz-placeholder {
-    font-size: 13px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 13px;
   }
   .profile__input::placeholder {
-    font-size: 13px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 13px;
   }
   .profile__checkbox {
     font-size: 13px;
@@ -4475,6 +4475,19 @@ a:hover {
 @media screen and (max-width: 1400px) {
   .profile {
     margin: 0 auto 60px auto;
+  }
+  .profile__input {
+    padding: 8px 20px;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .profile__input::-moz-placeholder {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .profile__input::placeholder {
+    font-size: 11px;
+    line-height: 12px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -4504,7 +4517,6 @@ a:hover {
   }
   .profile__input {
     padding: 12px 20px;
-    border: 1.2px solid var(--blue-color);
   }
   .profile__checkbox {
     margin-bottom: 10px;
@@ -5694,7 +5706,55 @@ a:hover {
   gap: 20px;
   padding-right: 40px;
 }
+.organization__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.organization__link img {
+  height: 20px;
+  width: 20px;
+}
+.organization__link a {
+  color: var(--blue-color);
+}
 
+@media screen and (max-width: 1600px) {
+  .profileOrganization__save {
+    padding: 10px 30px;
+    line-height: 16px;
+  }
+  .profileOrganization__btn {
+    padding: 10px 30px;
+  }
+  .profileOrganization__list {
+    gap: 8px;
+  }
+  .profileOrganization__form {
+    padding: 12px;
+  }
+  .organization {
+    gap: 12px;
+    padding: 12px;
+  }
+  .organization__title {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+  .organization__main p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .organization__link img {
+    height: 16px;
+    width: 16px;
+  }
+  .organization__link a {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .profileOrganization__form {
     flex-direction: column;
@@ -5708,9 +5768,6 @@ a:hover {
   .organization {
     flex-direction: column;
     gap: 10px;
-  }
-  .organization__title {
-    margin-bottom: 10px;
   }
   .organization__links {
     height: -moz-fit-content;
