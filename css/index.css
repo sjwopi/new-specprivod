@@ -3986,6 +3986,8 @@ a:hover {
 }
 .modal__password {
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 .modal__password.open .modal__eye {
@@ -4375,6 +4377,8 @@ a:hover {
 }
 .profile__input {
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   outline: none;
   border: 2px solid var(--blue-color);
   color: var(--blue-color);
@@ -4439,6 +4443,33 @@ a:hover {
   }
   .profile__data {
     gap: 12px;
+  }
+  .profile__label {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 12px 0;
+  }
+  .profile__input {
+    padding: 10px 20px;
+    border: 1px solid var(--blue-color);
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .profile__input::-moz-placeholder {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .profile__input::placeholder {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .profile__checkbox {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .profile__checkbox input[type=checkbox] {
+    width: 15px;
+    height: 15px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -5275,6 +5306,14 @@ a:hover {
   width: calc((100% - 60px) / 4);
 }
 
+@media screen and (max-width: 1600px) {
+  .profileFavorites {
+    gap: 12px;
+  }
+  .profileFavorites__item {
+    width: calc((100% - 36px) / 4);
+  }
+}
 @media screen and (max-width: 1200px) {
   .profileFavorites {
     gap: 12px;

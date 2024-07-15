@@ -10,6 +10,15 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .profileFavorites {
+    gap: 12px;
+
+    &__item {
+      width: calc((100% - 36px) / 4);
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   .profileFavorites {
     gap: 12px;

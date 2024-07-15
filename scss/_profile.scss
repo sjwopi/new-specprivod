@@ -59,6 +59,7 @@
 
   &__input {
     width: 100%;
+    height: fit-content;
     outline: none;
     border: 2px solid var(--blue-color);
     color: var(--blue-color);
@@ -121,6 +122,7 @@
     &__container {
       gap: 12px;
     }
+
     &__title {
       font-size: 22px;
       line-height: 26px;
@@ -133,6 +135,34 @@
 
     &__data {
       gap: 12px;
+    }
+
+    &__label {
+      font-size: 13px;
+      line-height: 14px;
+      padding: 12px 0;
+    }
+
+    &__input {
+      padding: 10px 20px;
+      border: 1px solid var(--blue-color);
+      font-size: 13px;
+      line-height: 14px;
+
+      &::placeholder {
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+
+    &__checkbox {
+      font-size: 13px;
+      line-height: 14px;
+
+      input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 }
