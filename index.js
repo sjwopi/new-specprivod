@@ -108,4 +108,10 @@ window.onload = function () {
       profileOrganizationForm.classList.toggle('open')
     })
   }
+
+  const deliveryDropdownBtn = document.getElementById('profileCart__dropdown-btn');
+  const deliveryDropdown = document.getElementById('profileCart__dropdown');
+  deliveryDropdownBtn.addEventListener('click', () => {
+    deliveryDropdown.classList.toggle('open')
+  })
 }

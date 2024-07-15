@@ -291,13 +291,25 @@
     }
 
     &__availability {
+      font-size: 12px;
+      line-height: 15px;
       order: 1;
       color: var(--cian-text-color);
+    }    
+    
+    &__name {
+      font-size: 12px;
+      line-height: 15px;
     }
 
     &__price {
       font-size: 16px;
       line-height: 18px;
+    }
+
+    &__art {
+      font-size: 12px;
+      line-height: 15px;
     }
   }
 }
