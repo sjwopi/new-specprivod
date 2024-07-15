@@ -33,19 +33,45 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
   .deliveryItem {
     gap: 20px;
     padding: 20px;
 
     &__checkbox {
-      width: 23px;
-      height: 23px;
+      width: 16px;
+      height: 16px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 14px;
     }
 
     &__delete {
-      width: 23px;
-      height: 23px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .deliveryItem {
+    gap: 20px;
+    padding: 20px;
+
+    &__checkbox {
+      width: 14px;
+      height: 14px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    &__delete {
+      width: 14px;
+      height: 14px;
     }
   }
 }

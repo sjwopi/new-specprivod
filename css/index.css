@@ -5571,18 +5571,40 @@ a:hover {
   background: url(../assets/icons/cart-delete.svg) center/contain no-repeat;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
   .deliveryItem {
     gap: 20px;
     padding: 20px;
   }
   .deliveryItem__checkbox {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
+  }
+  .deliveryItem p {
+    font-size: 13px;
+    line-height: 14px;
   }
   .deliveryItem__delete {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .deliveryItem {
+    gap: 20px;
+    padding: 20px;
+  }
+  .deliveryItem__checkbox {
+    width: 14px;
+    height: 14px;
+  }
+  .deliveryItem p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .deliveryItem__delete {
+    width: 14px;
+    height: 14px;
   }
 }
 @media screen and (max-width: 720px) {
