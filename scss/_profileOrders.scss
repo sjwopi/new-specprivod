@@ -112,7 +112,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   .profileOrders {
     &__list {
       gap: 20px;
@@ -120,15 +120,79 @@
   }
 
   .order {
+    padding: 15px 0;
+
     &__row {
       gap: 30px;
     }
 
     &__footer {
-      gap: 20px;
+      padding-top: 10px;
+      gap: 50px;
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .profileOrders {
+    &__list {
+      gap: 15px;
+    }
+
+    &__count {
+      width: 100px;
+      padding: 6px 0;
+      border: 1px solid var(--blue-color);
+      font-size: 13px;
+      line-height: 14px;
+    }
+  }
+
+  .order {
+    padding: 12px 0;
+
+    &__header {
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__status {
+      font-size: 13px;
+      line-height: 14px;
+      padding: 6px 24px;
+      border: 1px solid #848484;
+
+      &.green {
+        border: 1px solid #116022;
+      }
+    }
+
+    &__title {
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    &__subtitle {
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    &__btn {
+      gap: 10px;
+
+      a {
+        font-size: 13px;
+        line-height: 14px;
+      }
+    }
+
+    &__icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .order {
     &__row {
@@ -165,6 +229,7 @@
       padding: 5px 30px;
     }
   }
+
   .order {
     &__link {
       font-size: 12px;
