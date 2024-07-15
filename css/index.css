@@ -4104,6 +4104,12 @@ a:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 1600px) {
+  .modal__eye {
+    width: 14px;
+    height: 14px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .modal__form {
     position: fixed;
@@ -4445,9 +4451,10 @@ a:hover {
     gap: 12px;
   }
   .profile__label {
-    font-size: 13px;
-    line-height: 14px;
-    padding: 12px 0;
+    min-width: 90px;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 8px 0;
   }
   .profile__input {
     padding: 10px 20px;
@@ -4470,6 +4477,12 @@ a:hover {
   .profile__checkbox input[type=checkbox] {
     width: 15px;
     height: 15px;
+  }
+  .profile__save {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 10px 40px;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 1400px) {

@@ -138,9 +138,10 @@
     }
 
     &__label {
-      font-size: 13px;
-      line-height: 14px;
-      padding: 12px 0;
+      min-width: 90px;
+      font-size: 12px;
+      line-height: 13px;
+      padding: 8px 0;
     }
 
     &__input {
@@ -163,6 +164,13 @@
         width: 15px;
         height: 15px;
       }
+    }
+
+    &__save {
+      font-size: 13px;
+      line-height: 13px;
+      padding: 10px 40px;
+      margin-top: 10px;
     }
   }
 }
@@ -234,6 +242,8 @@
     }
 
     &__save {
+      font-size: 12px;
+      line-height: 15px;
       padding: 10px 40px;
       margin-top: 0;
     }

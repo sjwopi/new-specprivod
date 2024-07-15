@@ -236,7 +236,12 @@
   }
 }
 
-
+@media screen and (max-width: 1600px) {
+  .modal__eye {
+    width: 14px;
+    height: 14px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .modal {
