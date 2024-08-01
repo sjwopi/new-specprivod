@@ -1,0 +1,16 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "savePathReplacementPairs": {
+        "main": "scss/main"
+      }
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/_*.scss"
+  ],
+  "liveSassCompile.settings.generateMap": false
+}
